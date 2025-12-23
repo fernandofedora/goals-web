@@ -1,6 +1,7 @@
 import { NavLink, Link } from 'react-router-dom'
 import Logo from './Logo'
 import { useI18n } from '../i18n'
+import ThemeToggle from './ThemeToggle'
 
 function NavItem({ to, children }: { to: string; children: React.ReactNode }) {
   return (
@@ -22,7 +23,7 @@ export default function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
           <Logo size={32} rounded />
-          <span className="text-lg font-semibold">Goals System</span>
+          <span className="text-lg font-semibold dark:text-neutral-100">Goals System</span>
         </Link>
         <nav className="flex items-center gap-2">
           <NavItem to="/download">{t('nav.download')}</NavItem>
@@ -41,6 +42,7 @@ export default function Navbar() {
               <option value="en">English</option>
             </select>
           </div>
+          <ThemeToggle />
           <Link to="/donate" className="btn btn-primary">{t('nav.donate')}</Link>
         </div>
       </div>

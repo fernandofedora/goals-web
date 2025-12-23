@@ -10,7 +10,7 @@ import Donate from './pages/Donate'
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100">
       <Navbar />
       <main className="flex-1">
         <Routes>
