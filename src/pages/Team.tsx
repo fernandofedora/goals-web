@@ -45,6 +45,25 @@ export default function Team() {
           {t('team.contact.note')}
         </div>
       </div>
+
+      <div className="mt-12">
+        <h2 className="text-2xl font-bold mb-6">{t('team.faq.title')}</h2>
+        <div className="space-y-4">
+          <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 p-6 bg-white dark:bg-neutral-900 shadow-sm">
+            <h3 className="text-lg font-bold mb-2 text-neutral-900 dark:text-neutral-100">{t('team.faq.contribute.question')}</h3>
+            <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
+              {t('team.faq.contribute.answer')}
+            </p>
+          </div>
+
+          <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 p-6 bg-white dark:bg-neutral-900 shadow-sm">
+            <h3 className="text-lg font-bold mb-2 text-neutral-900 dark:text-neutral-100">{t('team.faq.free.question')}</h3>
+            <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
+              {t('team.faq.free.answer')}
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }

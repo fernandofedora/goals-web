@@ -8,11 +8,25 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Section title={t('home.what_is.title')}>
-        <p className="text-neutral-700 dark:text-neutral-300 max-w-3xl">
-          {t('home.what_is.desc')}
-        </p>
-      </Section>
+      <section className="container py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="rounded-2xl overflow-hidden bg-neutral-100 dark:bg-neutral-800 aspect-video lg:aspect-auto lg:h-[400px] flex items-center justify-center p-8">
+             <img 
+               src="/project-mockup.svg" 
+               alt="Goals System Mockup" 
+               className="w-full h-full object-contain drop-shadow-2xl"
+             />
+          </div>
+          <div>
+            <h2 className="text-3xl font-bold mb-6 dark:text-neutral-100">{t('home.what_is.title')}</h2>
+            <div className="space-y-4 text-neutral-700 dark:text-neutral-300 leading-relaxed">
+              <p>{t('home.what_is.p1')}</p>
+              <p>{t('home.what_is.p2')}</p>
+              <p>{t('home.what_is.p3')}</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <Section title={t('home.features.title')}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <FeatureCard
