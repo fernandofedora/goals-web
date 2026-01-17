@@ -1,107 +1,76 @@
-<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="800" height="600" fill="#F5F5F5"/>
-  
-  <!-- Left Phone (Larger) -->
-  <g filter="url(#shadow)">
-    <rect x="100" y="50" width="280" height="560" rx="35" fill="#111827"/>
-    <rect x="105" y="55" width="270" height="550" rx="32" stroke="#374151" stroke-width="2"/>
-    
-    <!-- Notch -->
-    <path d="M190 50 H290 C 290 50, 290 75, 275 75 H 205 C 190 75, 190 50, 190 50" fill="black"/>
-    
-    <!-- Screen Content -->
-    <g clip-path="url(#screen-clip-1)">
-      <!-- Header -->
-      <text x="130" y="120" fill="white" font-family="sans-serif" font-size="24" font-weight="bold">Budget</text>
-      <rect x="300" y="100" width="60" height="25" rx="12.5" fill="#EAB308"/>
-      <text x="315" y="117" fill="black" font-family="sans-serif" font-size="10" font-weight="bold">Add +</text>
-      
-      <!-- Stats Row -->
-      <text x="130" y="160" fill="#9CA3AF" font-family="sans-serif" font-size="12">Plan Figures</text>
-      <text x="280" y="160" fill="white" font-family="sans-serif" font-size="16" font-weight="bold">$57</text>
-      <text x="340" y="160" fill="white" font-family="sans-serif" font-size="16" font-weight="bold">23%</text>
-      
-      <!-- Balance Card -->
-      <rect x="125" y="190" width="230" height="80" rx="15" fill="#1F2937"/>
-      <circle cx="150" cy="230" r="15" fill="#3B82F6"/>
-      <text x="210" y="225" fill="#EAB308" font-family="sans-serif" font-size="14">$</text>
-      <text x="225" y="235" fill="#EAB308" font-family="sans-serif" font-size="24" font-weight="bold">565</text>
-      <text x="275" y="235" fill="#10B981" font-family="sans-serif" font-size="16" font-weight="bold">$178%</text>
-      
-      <!-- Chart Area -->
-      <text x="130" y="310" fill="white" font-family="sans-serif" font-size="20" font-weight="bold">3,5501</text>
-      
-      <!-- Bar Chart -->
-      <g transform="translate(130, 350)">
-        <rect x="0" y="40" width="10" height="60" rx="2" fill="#EF4444"/>
-        <rect x="15" y="30" width="10" height="70" rx="2" fill="#EF4444"/>
-        <rect x="30" y="50" width="10" height="50" rx="2" fill="#EF4444"/>
-        <rect x="45" y="20" width="10" height="80" rx="2" fill="#EF4444"/>
-        <rect x="60" y="35" width="10" height="65" rx="2" fill="#EF4444"/>
-        <rect x="75" y="10" width="10" height="90" rx="2" fill="#EF4444"/>
-        <rect x="90" y="25" width="10" height="75" rx="2" fill="#EF4444"/>
-        <rect x="105" y="45" width="10" height="55" rx="2" fill="#EF4444"/>
-        <rect x="120" y="15" width="10" height="85" rx="2" fill="#EF4444"/>
-        <rect x="135" y="40" width="10" height="60" rx="2" fill="#EF4444"/>
-        <rect x="150" y="55" width="10" height="45" rx="2" fill="#EF4444"/>
-        <rect x="165" y="30" width="10" height="70" rx="2" fill="#EF4444"/>
-        <rect x="180" y="60" width="10" height="40" rx="2" fill="#EF4444"/>
-        <rect x="195" y="20" width="10" height="80" rx="2" fill="#EF4444"/>
-        <rect x="210" y="0" width="10" height="100" rx="2" fill="#EF4444"/>
-      </g>
-      
-      <!-- Bottom Nav -->
-      <rect x="125" y="520" width="230" height="60" rx="20" fill="#1F2937"/>
-      <circle cx="155" cy="550" r="4" fill="#EAB308"/>
-      <circle cx="205" cy="550" r="4" fill="#4B5563"/>
-      <circle cx="255" cy="550" r="4" fill="#4B5563"/>
-      <circle cx="305" cy="550" r="4" fill="#4B5563"/>
-    </g>
-  </g>
-
-  <!-- Right Phone (Smaller/Behind perspective) -->
-  <g filter="url(#shadow)">
-    <rect x="420" y="100" width="240" height="480" rx="30" fill="#F3F4F6"/> <!-- White theme variant -->
-    <rect x="425" y="105" width="230" height="470" rx="27" stroke="#D1D5DB" stroke-width="2"/>
-    
-    <!-- Notch -->
-    <path d="M495 100 H565 C 565 100, 565 120, 555 120 H 505 C 495 120, 495 100, 495 100" fill="black"/>
-    
-    <!-- Screen Content -->
-    <g clip-path="url(#screen-clip-2)">
-      <!-- Header -->
-      <text x="445" y="160" fill="#111827" font-family="sans-serif" font-size="20" font-weight="bold">5718,000</text>
-      <text x="590" y="160" fill="#111827" font-family="sans-serif" font-size="16" font-weight="bold">229</text>
-      
-      <!-- Card -->
-      <rect x="445" y="200" width="190" height="100" rx="15" fill="#1F2937"/>
-      <text x="460" y="230" fill="white" font-family="sans-serif" font-size="12">Card One</text>
-      <text x="460" y="260" fill="#10B981" font-family="sans-serif" font-size="18" font-weight="bold">133K</text>
-      
-      <!-- Circle Chart -->
-      <path d="M 580 250 A 25 25 0 0 1 605 275" stroke="#10B981" stroke-width="4" fill="none"/>
-      <path d="M 580 250 A 25 25 0 1 0 580 300" stroke="#374151" stroke-width="4" fill="none"/>
-
-      <!-- Area Chart -->
-      <path d="M 445 450 Q 470 420 495 440 T 545 410 T 595 430 T 635 390 V 500 H 445 Z" fill="#2DD4BF" fill-opacity="0.2"/>
-      <path d="M 445 450 Q 470 420 495 440 T 545 410 T 595 430 T 635 390" stroke="#2DD4BF" stroke-width="2" fill="none"/>
-      
-    </g>
-  </g>
-
-  <!-- Defs for clips and shadows -->
+<svg width="960" height="540" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="shadow" x="0" y="0" width="200%" height="200%">
-      <feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
-      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
-      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ECFDF5"/>
+      <stop offset="1" stop-color="#E0F2FE"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22C55E"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <filter id="softShadow" x="0" y="0" width="200%" height="200%">
+      <feOffset in="SourceAlpha" dx="0" dy="18" result="off"/>
+      <feGaussianBlur in="off" stdDeviation="28" result="blur"/>
+      <feColorMatrix
+        in="blur"
+        type="matrix"
+        values="0 0 0 0 0.05
+                0 0 0 0 0.10
+                0 0 0 0 0.08
+                0 0 0 0.30 0"
+        result="shadow"/>
+      <feBlend in="SourceGraphic" in2="shadow" mode="normal"/>
     </filter>
-    <clipPath id="screen-clip-1">
-      <rect x="105" y="55" width="270" height="550" rx="32"/>
-    </clipPath>
-    <clipPath id="screen-clip-2">
-      <rect x="425" y="105" width="230" height="470" rx="27"/>
-    </clipPath>
   </defs>
+
+  <rect width="960" height="540" fill="url(#bg)"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="160" y="110" width="640" height="320" rx="32" fill="#F9FAFB"/>
+    <rect x="176" y="126" width="608" height="288" rx="24" fill="white"/>
+
+    <g transform="translate(216, 166)">
+      <rect x="0" y="0" width="528" height="200" rx="24" fill="#F1F5F9"/>
+
+      <path
+        d="
+          M 24 150
+          Q 88 120 136 136
+          T 248 110
+          T 344 134
+          T 448 96
+          T 504 118
+        "
+        fill="none"
+        stroke="url(#area)"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+      <path
+        d="
+          M 24 150
+          Q 88 120 136 136
+          T 248 110
+          T 344 134
+          T 448 96
+          T 504 118
+          L 504 176
+          L 24 176
+          Z
+        "
+        fill="url(#area)"
+        opacity="0.18"/>
+
+      <line x1="24" y1="60" x2="24" y2="176" stroke="#E5E7EB" stroke-width="1"/>
+      <line x1="144" y1="60" x2="144" y2="176" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4 4"/>
+      <line x1="264" y1="60" x2="264" y2="176" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4 4"/>
+      <line x1="384" y1="60" x2="384" y2="176" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4 4"/>
+      <line x1="504" y1="60" x2="504" y2="176" stroke="#E5E7EB" stroke-width="1"/>
+
+      <circle cx="136" cy="136" r="5" fill="white" stroke="#22C55E" stroke-width="3"/>
+      <circle cx="248" cy="110" r="5" fill="white" stroke="#22C55E" stroke-width="3"/>
+      <circle cx="344" cy="134" r="5" fill="white" stroke="#22C55E" stroke-width="3"/>
+      <circle cx="448" cy="96" r="5" fill="white" stroke="#22C55E" stroke-width="3"/>
+    </g>
+  </g>
 </svg>
