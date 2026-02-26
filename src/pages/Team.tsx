@@ -12,6 +12,12 @@ export default function Team() {
           <p className="text-sm text-neutral-600 dark:text-neutral-300">{t('team.member.role')}</p>
           <a href="https://github.com/solinkp" target="_blank" rel="noreferrer" className="btn btn-outline mt-4">GitHub</a>
         </article>
+        <article className="rounded-xl border border-neutral-200 dark:border-neutral-800 p-6 flex flex-col items-center text-center">
+          <img src="https://github.com/gonlex.png" alt="gonlex" className="h-20 w-20 rounded-full mb-3" />
+          <h3 className="text-lg font-semibold">Henry González</h3>
+          <p className="text-sm text-neutral-600 dark:text-neutral-300">{t('team.member.role')}</p>
+          <a href="https://github.com/gonlex" target="_blank" rel="noreferrer" className="btn btn-outline mt-4">GitHub</a>
+        </article>
       </div>
       <div className="rounded-xl bg-neutral-50 dark:bg-neutral-900 p-10 mt-10 text-center">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">{t('team.join.title')}</h2>
