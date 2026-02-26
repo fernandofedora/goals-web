@@ -1,76 +1,61 @@
-<svg width="960" height="540" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ECFDF5"/>
-      <stop offset="1" stop-color="#E0F2FE"/>
-    </linearGradient>
-    <linearGradient id="area" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#22C55E"/>
-      <stop offset="1" stop-color="#22D3EE"/>
-    </linearGradient>
-    <filter id="softShadow" x="0" y="0" width="200%" height="200%">
-      <feOffset in="SourceAlpha" dx="0" dy="18" result="off"/>
-      <feGaussianBlur in="off" stdDeviation="28" result="blur"/>
-      <feColorMatrix
-        in="blur"
-        type="matrix"
-        values="0 0 0 0 0.05
-                0 0 0 0 0.10
-                0 0 0 0 0.08
-                0 0 0 0.30 0"
-        result="shadow"/>
-      <feBlend in="SourceGraphic" in2="shadow" mode="normal"/>
-    </filter>
-  </defs>
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main container with background and border -->
+  <rect width="800" height="450" fill="#FFFFFF" rx="24"/>
+  <rect x="0.5" y="0.5" width="799" height="449" rx="23.5" stroke="#E5E7EB" stroke-opacity="0.8"/>
 
-  <rect width="960" height="540" fill="url(#bg)"/>
+  <!-- Title -->
+  <text x="40" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#111827">Income vs Expenses</text>
 
-  <g filter="url(#softShadow)">
-    <rect x="160" y="110" width="640" height="320" rx="32" fill="#F9FAFB"/>
-    <rect x="176" y="126" width="608" height="288" rx="24" fill="white"/>
+  <!-- Grid Lines -->
+  <g stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="100" y1="90" x2="760" y2="90" />
+    <line x1="100" y1="160" x2="760" y2="160" />
+    <line x1="100" y1="230" x2="760" y2="230" />
+    <line x1="100" y1="300" x2="760" y2="300" />
+    <line x1="100" y1="370" x2="760" y2="370" />
+  </g>
 
-    <g transform="translate(216, 166)">
-      <rect x="0" y="0" width="528" height="200" rx="24" fill="#F1F5F9"/>
+  <!-- Y-axis Labels -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6B7280" text-anchor="end">
+    <text x="80" y="94">2200</text>
+    <text x="80" y="164">1650</text>
+    <text x="80" y="234">1100</text>
+    <text x="80" y="304">550</text>
+    <text x="80" y="374">0</text>
+  </g>
 
-      <path
-        d="
-          M 24 150
-          Q 88 120 136 136
-          T 248 110
-          T 344 134
-          T 448 96
-          T 504 118
-        "
-        fill="none"
-        stroke="url(#area)"
-        stroke-width="4"
-        stroke-linecap="round"/>
+  <!-- X-axis Labels -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6B7280" text-anchor="middle">
+    <text x="140" y="390">ene</text>
+    <text x="195" y="390">feb</text>
+    <text x="250" y="390">mar</text>
+    <text x="305" y="390">abr</text>
+    <text x="360" y="390">may</text>
+    <text x="415" y="390">jun</text>
+    <text x="470" y="390">jul</text>
+    <text x="525" y="390">ago</text>
+    <text x="580" y="390">sep</text>
+    <text x="635" y="390">oct</text>
+    <text x="690" y="390">nov</text>
+    <text x="745" y="390">dic</text>
+  </g>
 
-      <path
-        d="
-          M 24 150
-          Q 88 120 136 136
-          T 248 110
-          T 344 134
-          T 448 96
-          T 504 118
-          L 504 176
-          L 24 176
-          Z
-        "
-        fill="url(#area)"
-        opacity="0.18"/>
+  <!-- Bars -->
+  <g>
+    <!-- Expenses (Red) -->
+    <rect x="130" y="322" width="20" height="48" fill="#EF4444" rx="2"/>
+    <rect x="185" y="254" width="20" height="116" fill="#EF4444" rx="2"/>
+    
+    <!-- Income (Green - using site's primary color) -->
+    <rect x="150" y="90" width="20" height="280" fill="#10B981" rx="2"/>
+    <rect x="205" y="336" width="20" height="34" fill="#10B981" rx="2"/>
+  </g>
 
-      <line x1="24" y1="60" x2="24" y2="176" stroke="#E5E7EB" stroke-width="1"/>
-      <line x1="144" y1="60" x2="144" y2="176" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4 4"/>
-      <line x1="264" y1="60" x2="264" y2="176" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4 4"/>
-      <line x1="384" y1="60" x2="384" y2="176" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4 4"/>
-      <line x1="504" y1="60" x2="504" y2="176" stroke="#E5E7EB" stroke-width="1"/>
-
-      <circle cx="136" cy="136" r="5" fill="white" stroke="#22C55E" stroke-width="3"/>
-      <circle cx="248" cy="110" r="5" fill="white" stroke="#22C55E" stroke-width="3"/>
-      <circle cx="344" cy="134" r="5" fill="white" stroke="#22C55E" stroke-width="3"/>
-      <circle cx="448" cy="96" r="5" fill="white" stroke="#22C55E" stroke-width="3"/>
-    </g>
+  <!-- Legend -->
+  <g transform="translate(320, 410)" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#374151">
+    <rect x="0" y="0" width="12" height="12" fill="#EF4444" rx="2"/>
+    <text x="18" y="10">expenses</text>
+    <rect x="80" y="0" width="12" height="12" fill="#10B981" rx="2"/>
+    <text x="98" y="10">income</text>
   </g>
 </svg>
