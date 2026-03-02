@@ -3,40 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --brand: #1EA38C;
+  --brand: #059669;
 }
 
 @layer base {
   body {
-    @apply bg-white dark:bg-neutral-950;
+    @apply bg-neutral-50 dark:bg-neutral-950 font-sans text-neutral-800 dark:text-neutral-300;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply text-neutral-900 dark:text-neutral-100;
+    @apply font-heading font-bold text-neutral-950 dark:text-white tracking-tight;
   }
-}
-
-:root {
-  --brand: #1EA38C;
-}
-
-body {
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, Apple Color Emoji, Segoe UI Emoji;
 }
 
 .container {
-  @apply mx-auto max-w-7xl px-4;
+  @apply mx-auto max-w-7xl px-5 md:px-8;
 }
 
 .btn {
-  @apply inline-flex items-center rounded-lg px-4 py-2 font-medium transition-colors;
+  @apply inline-flex items-center justify-center rounded-lg px-5 py-2.5 font-semibold transition-all duration-200 active:scale-95;
 }
 
 .btn-primary {
-  @apply bg-primary text-white hover:bg-primary-dark;
+  @apply bg-primary text-white hover:bg-primary-dark shadow-sm hover:shadow dark:shadow-none;
 }
 
 .btn-outline {
-  @apply border border-primary text-primary hover:bg-primary hover:text-white;
+  @apply border-2 border-primary text-primary hover:bg-primary hover:text-white;
 }
 
 .dark .btn-outline {
