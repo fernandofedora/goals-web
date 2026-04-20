@@ -54,7 +54,10 @@ export default function Navbar() {
             </select>
           </div>
           <ThemeToggle />
-          <Link to="/donate" className="btn btn-primary">{t('nav.donate')}</Link>
+          <Link to="/donate" className="group relative inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-bold text-white bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 hover:from-emerald-700 hover:via-emerald-600 hover:to-teal-600 shadow-md shadow-emerald-500/25 hover:shadow-lg hover:shadow-emerald-500/35 transition-all duration-300 active:scale-95">
+            <svg className="w-4 h-4 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            {t('nav.donate')}
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -100,7 +103,10 @@ export default function Navbar() {
               <ThemeToggle />
             </div>
 
-            <Link to="/donate" onClick={() => setIsMobileMenuOpen(false)} className="btn btn-primary w-full mt-2 text-center h-11">{t('nav.donate')}</Link>
+            <Link to="/donate" onClick={() => setIsMobileMenuOpen(false)} className="group relative flex items-center justify-center gap-2 w-full mt-2 px-5 py-3 rounded-full text-base font-bold text-white bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 hover:from-emerald-700 hover:via-emerald-600 hover:to-teal-600 shadow-md shadow-emerald-500/25 transition-all duration-300 active:scale-95">
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              {t('nav.donate')}
+            </Link>
           </div>
         </div>
       )}
