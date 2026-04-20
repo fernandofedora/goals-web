@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import { useI18n } from '../i18n'
+import Modal from '../components/Modal'
 
 export default function Download() {
   const { t } = useI18n()
+  const [showWarning, setShowWarning] = useState(false)
   return (
+    <>
     <section className="container py-20 animate-fade-in-up">
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-heading font-black tracking-tighter mb-6 dark:text-white text-center md:text-left">{t('download.title')}</h1>
@@ -74,7 +78,18 @@ export default function Download() {
           <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
               <h2 className="text-2xl font-heading font-bold mb-2 text-primary-dark dark:text-primary-light">{t('download.online.title')}</h2>
-              <p className="text-neutral-700 dark:text-neutral-300 max-w-xl text-lg">{t('download.online.note')}</p>
+              <p className="text-neutral-700 dark:text-neutral-300 max-w-xl text-lg mb-2">{t('download.online.note')}</p>
+              <button 
+                onClick={() => setShowWarning(true)}
+                className="text-primary hover:text-primary-dark text-sm font-bold flex items-center gap-1.5 transition-colors group"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span className="border-b border-primary/30 group-hover:border-primary transition-colors">
+                  {t('download.online.warning_link')}
+                </span>
+              </button>
             </div>
             <a
               href="https://goals.zeabur.app/"
@@ -88,5 +103,17 @@ export default function Download() {
         </div>
       </div>
     </section>
-  )
+    
+    <Modal 
+      isOpen={showWarning} 
+      onClose={() => setShowWarning(false)}
+      title={t('download.warning.title')}
+      closeText={t('download.warning.close')}
+    >
+      <p>{t('download.warning.p1')}</p>
+      <p>{t('download.warning.p2')}</p>
+      <p className="font-bold text-primary">{t('download.warning.p3')}</p>
+    </Modal>
+  </>
+)
 }
