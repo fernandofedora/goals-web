@@ -92,7 +92,7 @@ export default function Download() {
               </button>
             </div>
             <a
-              href="https://goals.zeabur.app/"
+              href="https://app.goalssis.org/"
               target="_blank"
               rel="noreferrer"
               className="btn btn-primary whitespace-nowrap text-lg h-14 px-8 shadow-lg shadow-primary/25"
