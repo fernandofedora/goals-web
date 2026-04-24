@@ -29,6 +29,13 @@ export default function Team() {
             <p className="text-primary font-medium mb-8">{t('team.member.role')}</p>
             <a href="https://github.com/aibotcito" target="_blank" rel="noreferrer" className="btn btn-outline w-full rounded-xl">GitHub Profile</a>
           </article>
+          <article className="group rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50 p-10 flex flex-col items-center text-center hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 relative overflow-hidden">
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-indigo-500/10 rounded-full blur-2xl group-hover:bg-indigo-500/20 transition-colors"></div>
+            <img src="https://github.com/fernandofedora.png" alt="fernandofedora" className="h-32 w-32 rounded-3xl mb-6 shadow-xl object-cover" />
+            <h3 className="text-2xl font-bold mb-2">Fernando Fedora</h3>
+            <p className="text-primary font-medium mb-8">{t('team.member.role')}</p>
+            <a href="https://github.com/fernandofedora" target="_blank" rel="noreferrer" className="btn btn-outline w-full rounded-xl">GitHub Profile</a>
+          </article>
         </div>
 
         <div className="rounded-[40px] bg-neutral-900 dark:bg-black text-white p-12 md:p-16 mb-20 text-center relative overflow-hidden group">
