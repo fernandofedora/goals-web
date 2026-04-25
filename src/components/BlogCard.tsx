@@ -6,39 +6,64 @@ export default function BlogCard({
   title,
   excerpt,
   date,
-  tags,
+  category,
+  author,
 }: {
   slug: string
   title: string
   excerpt: string
   date?: string
-  tags?: string[]
+  category?: string
+  author?: string
 }) {
-  const { t } = useI18n()
-  return (
-    <article className="group rounded-3xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900/50 p-8 flex flex-col hover:shadow-xl hover:-translate-y-2 transition-all duration-300 relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+  const { lang } = useI18n()
 
-      <div className="flex gap-2 mb-4">
-        {tags?.map((tag) => (
-          <span key={tag} className="text-[10px] font-bold rounded-full bg-primary/10 text-primary-dark dark:text-primary-light px-2.5 py-1 uppercase tracking-wider">
-            {tag}
+  // Format date correctly based on language
+  const formattedDate = date 
+    ? new Date(date).toLocaleDateString(lang === 'es' ? 'es-ES' : 'en-US', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric'
+      })
+    : ''
+
+  return (
+    <article className="group relative flex flex-col items-start justify-between rounded-2xl border border-neutral-200/60 dark:border-neutral-800/60 bg-white/50 dark:bg-neutral-900/20 p-6 sm:p-8 hover:bg-neutral-50 dark:hover:bg-neutral-800/40 transition-colors duration-300">
+      <Link to={`/blog/${slug}`} className="absolute inset-0 z-10">
+        <span className="sr-only">View Article</span>
+      </Link>
+      
+      <div className="flex items-center gap-x-4 text-xs mb-4">
+        {category && (
+          <span className="relative z-20 rounded-full bg-neutral-100 dark:bg-neutral-800 px-3 py-1.5 font-medium text-neutral-600 dark:text-neutral-300">
+            {category}
           </span>
-        ))}
+        )}
+        {formattedDate && (
+          <time dateTime={date} className="text-neutral-500">
+            {formattedDate}
+          </time>
+        )}
       </div>
 
-      <h3 className="text-2xl font-heading font-bold mb-3 dark:text-neutral-100 group-hover:text-primary transition-colors line-clamp-2">{title}</h3>
-      {date ? <p className="text-xs font-mono text-neutral-500 mb-4">{date}</p> : null}
+      <div className="group relative">
+        <h3 className="mt-3 text-xl font-semibold leading-snug text-neutral-900 dark:text-neutral-100 group-hover:text-primary transition-colors">
+          {title}
+        </h3>
+        <p className="mt-4 line-clamp-3 text-sm/relaxed text-neutral-600 dark:text-neutral-400">
+          {excerpt}
+        </p>
+      </div>
 
-      <p className="text-base text-neutral-600 dark:text-neutral-400 mt-2 flex-1 leading-relaxed line-clamp-3 mb-6">
-        {excerpt}
-      </p>
-
-      <div className="mt-auto pt-6 border-t border-neutral-100 dark:border-neutral-800/80">
-        <Link to={`/blog/${slug}`} className="inline-flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors group-hover:translate-x-1 transform duration-300">
-          {t('blog.read_more')} <span>→</span>
-        </Link>
+      <div className="relative mt-8 flex items-center gap-x-4">
+        <div className="text-sm leading-6">
+          <p className="font-semibold text-neutral-900 dark:text-neutral-100">
+            {author && <span className="absolute inset-0" />}
+            {author || 'Goals Team'}
+          </p>
+        </div>
       </div>
     </article>
   )
 }
+
