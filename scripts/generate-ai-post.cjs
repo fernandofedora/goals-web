@@ -4,7 +4,7 @@ const fm = require('front-matter')
 
 // Configuration
 const API_URL = 'https://api.x.ai/v1/chat/completions'
-const MODEL = 'grok-2-latest'
+const MODEL = 'grok-4-latest'
 const PROMPT_FILE = path.resolve(__dirname, 'prompts', 'blog-writer.txt')
 const CONTENT_ES_DIR = path.resolve(__dirname, '..', 'src', 'content', 'blog', 'es')
 const CONTENT_EN_DIR = path.resolve(__dirname, '..', 'src', 'content', 'blog', 'en')
