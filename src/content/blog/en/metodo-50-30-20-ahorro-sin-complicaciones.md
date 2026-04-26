@@ -10,8 +10,6 @@ tags:
   - personal finance
 ---
 
-![Alt text: Illustration of a person dividing their money into categories with 50/30/20 percentages, in a friendly and colorful style](featured-image.jpg)
-
 Estimated reading time: 7 minutes
 
 Imagine it's the end of the month and your bank account is in the red again. That morning coffee that seemed harmless, the impromptu outing with friends, or that online purchase you "needed" —it all adds up, and suddenly you're wondering where the money went. I've been there, more times than I'd like to admit. I remember when I started working, I earned just enough to cover the basics, but I always ended the month borrowing. It wasn't extreme splurging, but because I had no plan. That's where the 50/30/20 method comes in, something that saved me from that cycle. It's not magic, and it doesn't require you to be a finance expert. It's just a simple way to divide your income into three parts: needs, wants, and savings. And the best part is it adapts to you, not the other way around. If you're tired of complicated budgets that last a week, this might be what you need. Let's break it down step by step, with examples that sound familiar, so you can see how to apply it without going crazy.
