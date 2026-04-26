@@ -3,3 +3,11 @@ node_modules
 dist
 dist-ssr
 *.local
+
+# AI Agents
+.agents/
+.claude/
+.kiro/
+.trae/
+.windsurf/
+skills-lock.json
