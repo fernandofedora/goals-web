@@ -29,7 +29,7 @@ export default function BlogCard({
 
   return (
     <article className="group relative flex flex-col items-start justify-between rounded-2xl border border-neutral-200/60 dark:border-neutral-800/60 bg-white/50 dark:bg-neutral-900/20 p-6 sm:p-8 hover:bg-neutral-50 dark:hover:bg-neutral-800/40 transition-colors duration-300">
-      <Link to={`/blog/${slug}`} className="absolute inset-0 z-10">
+      <Link to={`/${lang}/blog/${slug}`} className="absolute inset-0 z-10">
         <span className="sr-only">View Article</span>
       </Link>
       
