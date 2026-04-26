@@ -10,8 +10,6 @@ tags:
   - finanzas personales
 ---
 
-![Alt text: Ilustración de una persona dividiendo su dinero en categorías con porcentajes 50/30/20, en un estilo amigable y colorido](featured-image.jpg)
-
 Tiempo de lectura estimado: 7 minutos
 
 Imagina que es fin de mes y tu cuenta bancaria está en números rojos otra vez. Ese café de la mañana que parecía inofensivo, la salida improvisada con amigos, o esa compra online que "necesitabas" —todo suma, y de repente te preguntas dónde se fue el dinero. Yo he estado ahí, más veces de las que me gustaría admitir. Recuerdo cuando empecé a trabajar, ganaba lo justo para cubrir lo básico, pero siempre terminaba el mes pidiendo prestado. No era por derroche extremo, sino porque no tenía un plan. Ahí es donde entra el método 50/30/20, algo que me salvó de ese ciclo. No es magia, ni requiere que seas un experto en finanzas. Es solo una forma sencilla de dividir tu ingreso en tres partes: necesidades, deseos y ahorro. Y lo mejor es que se adapta a ti, no al revés. Si estás harto de presupuestos complicados que duran una semana, esto podría ser lo que necesitas. Vamos a desglosarlo paso a paso, con ejemplos que te suenen familiares, para que veas cómo aplicarlo sin volverte loco.
