@@ -3,12 +3,12 @@ import Logo from './Logo'
 import { Link } from 'react-router-dom'
 
 export default function Footer() {
-  const { t } = useI18n()
+  const { t, lang } = useI18n()
   return (
     <footer className="border-t border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black py-12 md:py-16">
       <div className="container flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="flex flex-col items-center md:items-start gap-4">
-          <Link to="/" className="flex items-center gap-3 opacity-80 hover:opacity-100 transition-opacity">
+          <Link to={`/${lang}`} className="flex items-center gap-3 opacity-80 hover:opacity-100 transition-opacity">
             <Logo size={28} rounded />
             <span className="text-lg font-heading font-bold tracking-tight text-neutral-900 dark:text-white">Goals System</span>
           </Link>

@@ -1,8 +1,9 @@
-import { lazy, Suspense } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { lazy, Suspense, useEffect } from 'react'
+import { Routes, Route, Navigate, useParams, Outlet } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
+import { useI18n } from './i18n'
 
 // Lazy-loaded pages — separate chunks, downloaded only when visited
 const Download = lazy(() => import('./pages/Download'))
@@ -19,6 +20,30 @@ function PageLoader() {
   )
 }
 
+function LanguageWrapper() {
+  const { lang } = useParams()
+  const { setLang, lang: currentLang } = useI18n()
+
+  useEffect(() => {
+    if ((lang === 'es' || lang === 'en') && lang !== currentLang) {
+      setLang(lang)
+    }
+  }, [lang, setLang, currentLang])
+
+  if (lang !== 'es' && lang !== 'en') {
+    return <Navigate to="/es" replace />
+  }
+
+  return <Outlet />
+}
+
+function RootRedirect() {
+  const stored = localStorage.getItem('lang')
+  const browserLang = navigator.language.startsWith('es') ? 'es' : 'en'
+  const lang = (stored === 'es' || stored === 'en') ? stored : browserLang
+  return <Navigate to={`/${lang}`} replace />
+}
+
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100">
@@ -26,12 +51,15 @@ export default function App() {
       <main className="flex-1">
         <Suspense fallback={<PageLoader />}>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/download" element={<Download />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/donate" element={<Donate />} />
+            <Route path="/" element={<RootRedirect />} />
+            <Route path="/:lang" element={<LanguageWrapper />}>
+              <Route index element={<Home />} />
+              <Route path="download" element={<Download />} />
+              <Route path="blog" element={<Blog />} />
+              <Route path="blog/:slug" element={<BlogPost />} />
+              <Route path="team" element={<Team />} />
+              <Route path="donate" element={<Donate />} />
+            </Route>
           </Routes>
         </Suspense>
       </main>

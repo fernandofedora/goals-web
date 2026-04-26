@@ -3,7 +3,7 @@ import Logo from './Logo'
 import { useI18n } from '../i18n'
 
 export default function Hero() {
-  const { t } = useI18n()
+  const { t, lang } = useI18n()
   return (
     <section className="container py-24 md:py-32 text-center flex flex-col items-center justify-center min-h-[80vh] animate-fade-in-up">
       <div className="flex justify-center mb-10 relative">
@@ -27,7 +27,7 @@ export default function Hero() {
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
         <a href="https://fernandofedora.github.io/goal-document/user/guia-inicio/" className="btn btn-outline w-full sm:w-auto text-lg h-14 px-8">{t('hero.docs')}</a>
-        <Link to="/download" className="btn btn-primary w-full sm:w-auto text-lg h-14 px-8 shadow-lg shadow-primary/25">{t('hero.start')}</Link>
+        <Link to={`/${lang}/download`} className="btn btn-primary w-full sm:w-auto text-lg h-14 px-8 shadow-lg shadow-primary/25">{t('hero.start')}</Link>
       </div>
     </section>
   )

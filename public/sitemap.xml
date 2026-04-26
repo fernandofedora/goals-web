@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://goalssis.org/es</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://goalssis.org/es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://goalssis.org/en" />
+  </url>
+  <url>
+    <loc>https://goalssis.org/es/download</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://goalssis.org/es/download" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://goalssis.org/en/download" />
+  </url>
+  <url>
+    <loc>https://goalssis.org/es/blog</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://goalssis.org/es/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://goalssis.org/en/blog" />
+  </url>
+  <url>
+    <loc>https://goalssis.org/es/team</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://goalssis.org/es/team" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://goalssis.org/en/team" />
+  </url>
+  <url>
+    <loc>https://goalssis.org/es/donate</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://goalssis.org/es/donate" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://goalssis.org/en/donate" />
+  </url>
+  <url>
+    <loc>https://goalssis.org/en</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://goalssis.org/es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://goalssis.org/en" />
+  </url>
+  <url>
+    <loc>https://goalssis.org/en/download</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://goalssis.org/es/download" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://goalssis.org/en/download" />
+  </url>
+  <url>
+    <loc>https://goalssis.org/en/blog</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://goalssis.org/es/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://goalssis.org/en/blog" />
+  </url>
+  <url>
+    <loc>https://goalssis.org/en/team</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://goalssis.org/es/team" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://goalssis.org/en/team" />
+  </url>
+  <url>
+    <loc>https://goalssis.org/en/donate</loc>
+    <lastmod>2026-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://goalssis.org/es/donate" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://goalssis.org/en/donate" />
+  </url>
+  <url>
+    <loc>https://goalssis.org/es/blog/buenas-practicas-categorias</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goalssis.org/es/blog/configura-presupuesto-mensual</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goalssis.org/es/blog/exporta-datos-excel</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goalssis.org/es/blog/planes-de-ahorro-metas-progreso</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goalssis.org/en/blog/category-best-practices</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goalssis.org/en/blog/export-your-data-to-excel</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goalssis.org/en/blog/saving-plans-goals-progress</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://goalssis.org/en/blog/set-your-monthly-budget</loc>
+    <lastmod>2025-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

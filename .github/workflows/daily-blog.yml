@@ -1,0 +1,42 @@
+name: Auto Generate Daily Blog Post
+
+on:
+  schedule:
+    # Runs at 10:00 AM UTC every day
+    - cron: '0 10 * * *'
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  generate-post:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch all history to ensure proper git operations
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate AI Post (xAI Grok)
+        run: node scripts/generate-ai-post.cjs
+        env:
+          # Reads the secret from GitHub Repository Secrets
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+
+      - name: Commit and Push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "📝 blog: Auto-generated daily post via xAI"
+          commit_user_name: "Goals System AI Bot"
+          commit_user_email: "actions@github.com"
+          commit_author: "Goals System AI Bot <actions@github.com>"
+          file_pattern: 'src/content/blog/**/*.md'

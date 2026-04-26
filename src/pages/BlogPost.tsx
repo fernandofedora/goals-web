@@ -30,7 +30,7 @@ export default function BlogPost() {
       <section className="container py-20 text-center flex flex-col items-center justify-center min-h-[60vh]">
         <h1 className="text-7xl font-heading font-black mb-4 text-primary">404</h1>
         <p className="text-xl text-neutral-600 dark:text-neutral-400 mb-8">{t('blog.not_found')}</p>
-        <Link to="/blog" className="btn btn-primary h-12 px-8">{t('blog.back')}</Link>
+        <Link to={`/${lang}/blog`} className="btn btn-primary h-12 px-8">{t('blog.back')}</Link>
       </section>
     )
   }
@@ -98,8 +98,8 @@ export default function BlogPost() {
             </article>
           )}
 
-          <div className="pt-8 border-t border-neutral-200 dark:border-neutral-800 flex justify-start">
-            <Link to="/blog" className="btn btn-outline h-12 px-8 flex items-center gap-2">
+          <div className="mt-20 pt-8 border-t border-neutral-200/60 dark:border-neutral-800/60 flex justify-center">
+            <Link to={`/${lang}/blog`} className="btn btn-outline h-12 px-8 flex items-center gap-2">
               <span>←</span> {t('blog.back')}
             </Link>
           </div>
