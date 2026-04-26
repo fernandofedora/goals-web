@@ -105,8 +105,8 @@ Estructura requerida del JSON:
     "author": "Goals Team",
     "tags": ["string", "string"]
   },
-  "es_content": "string (Cuerpo del artículo en Español usando formato Markdown, incluyendo el título H1 al inicio)",
-  "en_content": "string (Traducción perfecta, natural y adaptada culturalmente al Inglés usando formato Markdown, incluyendo el título H1 al inicio)"
+  "es_content": "string (Cuerpo del artículo en Español usando formato Markdown, SIN el título H1 al inicio ya que el sistema lo añade automáticamente)",
+  "en_content": "string (Traducción perfecta al Inglés usando formato Markdown, SIN el título H1 al inicio)"
 }
 
 ═══ CONTROL DE DUPLICADOS ═══
