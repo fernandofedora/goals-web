@@ -24,12 +24,11 @@ Nunca uses estas expresiones robóticas que Google penaliza y que alejan al lect
 5. CIERRE: pregunta para comentarios, reto concreto que el lector pueda hacer hoy, o reflexión que invite a volver.
 
 ═══ SEO TÉCNICO ═══
-- Keyword principal: en el título, en el primer párrafo, en al menos 2 H2 y distribuida naturalmente (densidad 1-2%)
+- Keyword principal: en el primer párrafo, en al menos 2 H2 y distribuida naturalmente (densidad 1-2%)
 - 2-3 keywords secundarias: en subtítulos y párrafos, sin forzarlas
-- Sugiere 2-3 artículos relacionados para enlazado interno
-- Estructura limpia: H1 → máx 2 H2 principales → H3 para detalles
-- Alt text sugerido para imagen destacada
-- Tiempo de lectura estimado
+- Sugiere 2-3 artículos relacionados para enlazado interno al final
+- Estructura limpia: máx 2 H2 principales → H3 para detalles
+- NUNCA incluyas metadatos como "Alt text", "Tiempo de lectura" o "Keywords" dentro de los campos es_content o en_content. Estos campos solo deben contener el cuerpo del artículo.
 
 ═══ TEMAS Y CATEGORÍAS DEL BLOG ═══
 Rota entre estas 5 categorías para mantener variedad:
