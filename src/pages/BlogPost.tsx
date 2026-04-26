@@ -60,28 +60,44 @@ export default function BlogPost() {
         {JSON.stringify(schema)}
       </script>
 
-      <section className="container py-20 animate-fade-in-up">
+      <section className="container py-16 md:py-24 animate-fade-in-up">
         <div className="max-w-3xl mx-auto">
-          {/* Header — renders instantly from cached metadata */}
-          <div className="mb-10">
-            <div className="flex items-center gap-x-4 text-sm mb-6">
-              <span className="rounded-full bg-neutral-100 dark:bg-neutral-800 px-3 py-1 font-medium text-neutral-600 dark:text-neutral-300">
+          {/* Header */}
+          <header className="mb-12">
+            <div className="flex flex-wrap items-center gap-3 text-sm mb-6">
+              <span className="rounded-full bg-primary/10 text-primary dark:bg-primary/15 dark:text-primary-light px-3.5 py-1 font-semibold tracking-wide uppercase text-xs">
                 {post.category}
               </span>
-              <time dateTime={post.date} className="text-neutral-500">
+              <span className="text-neutral-400 dark:text-neutral-600">·</span>
+              <time dateTime={post.date} className="text-neutral-500 dark:text-neutral-400">
                 {formattedDate}
               </time>
-              <span className="text-neutral-500">•</span>
-              <span className="text-neutral-500 font-medium">{post.author}</span>
+              <span className="text-neutral-400 dark:text-neutral-600">·</span>
+              <span className="text-neutral-500 dark:text-neutral-400">{post.author}</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black tracking-tight mb-6 leading-tight dark:text-white">
+
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black tracking-tight mb-5 leading-[1.1] text-neutral-900 dark:text-white">
               {post.title}
             </h1>
-          </div>
 
-          <div className="w-full h-px bg-neutral-200 dark:bg-neutral-800 mb-10"></div>
+            <p className="text-lg md:text-xl text-neutral-500 dark:text-neutral-400 leading-relaxed">
+              {post.excerpt}
+            </p>
 
-          {/* Content — loaded lazily */}
+            {post.tags && post.tags.length > 0 && (
+              <div className="flex flex-wrap gap-2 mt-6">
+                {post.tags.map((tag: string) => (
+                  <span key={tag} className="text-xs font-medium text-neutral-500 dark:text-neutral-500 bg-neutral-100 dark:bg-neutral-800/60 rounded-md px-2.5 py-1">
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+            )}
+          </header>
+
+          <div className="w-full h-px bg-gradient-to-r from-transparent via-neutral-200 dark:via-neutral-800 to-transparent mb-12"></div>
+
+          {/* Content */}
           {loading ? (
             <div className="space-y-4 animate-pulse">
               <div className="h-4 bg-neutral-200 dark:bg-neutral-800 rounded w-full"></div>
@@ -91,7 +107,7 @@ export default function BlogPost() {
               <div className="h-4 bg-neutral-200 dark:bg-neutral-800 rounded w-3/6"></div>
             </div>
           ) : (
-            <article className="prose prose-lg md:prose-xl dark:prose-invert prose-headings:font-heading prose-headings:font-bold prose-a:text-primary hover:prose-a:text-primary-dark prose-img:rounded-2xl max-w-none mb-16">
+            <article className="prose prose-lg dark:prose-invert prose-headings:font-heading prose-a:text-primary hover:prose-a:text-primary-dark prose-img:rounded-2xl max-w-none mb-16">
               <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {content || ''}
               </ReactMarkdown>
