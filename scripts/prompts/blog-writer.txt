@@ -81,6 +81,9 @@ Como este proceso es 100% automatizado, debes elegir un tema que no esté en la 
 INSTRUCCIONES DE FORMATO ESTRICTO:
 Debes responder ÚNICA Y EXCLUSIVAMENTE con un objeto JSON válido. No incluyas markdown, no incluyas bloques \`\`\`json, solo el objeto JSON crudo para que pueda ser procesado programáticamente.
 
+¡MUY IMPORTANTE PARA EVITAR ERRORES DE PARSEO!: 
+Los campos "es_content" y "en_content" son valores de tipo string en JSON. En JSON, los strings NO pueden contener saltos de línea literales (Enter). Para crear párrafos o saltos de línea en el Markdown, DEBES usar el caracter de escape "\\n" (ejemplo: "Primer párrafo.\\n\\nSegundo párrafo.\\n\\n## Nuevo Subtítulo\\n\\nTexto..."). NO insertes saltos de línea reales dentro de las comillas de esos campos.
+
 Estructura requerida del JSON:
 {
   "seo_analysis": {
@@ -105,8 +108,8 @@ Estructura requerida del JSON:
     "author": "Goals Team",
     "tags": ["string", "string"]
   },
-  "es_content": "string (Cuerpo del artículo en Español usando formato Markdown, SIN el título H1 al inicio ya que el sistema lo añade automáticamente)",
-  "en_content": "string (Traducción perfecta al Inglés usando formato Markdown, SIN el título H1 al inicio)"
+  "es_content": "string (Cuerpo del artículo en Español. RECUERDA: Usa \\n para los saltos de línea, NO presiones Enter dentro del string. SIN H1 inicial)",
+  "en_content": "string (Traducción perfecta al Inglés. RECUERDA: Usa \\n para los saltos de línea. SIN H1 inicial)"
 }
 
 ═══ CONTROL DE DUPLICADOS ═══
