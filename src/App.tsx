@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect } from 'react'
-import { Routes, Route, Navigate, useParams, Outlet } from 'react-router-dom'
+import { Routes, Route, Navigate, useParams, Outlet, useLocation } from 'react-router-dom'
+import ReactGA from 'react-ga4'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -45,6 +46,26 @@ function RootRedirect() {
 }
 
 export default function App() {
+  const location = useLocation()
+
+  // Initialize GA4 once
+  useEffect(() => {
+    const gaId = import.meta.env.VITE_GA_MEASUREMENT_ID
+    if (gaId) {
+      ReactGA.initialize(gaId)
+    }
+  }, [])
+
+  // Track page views on route changes
+  useEffect(() => {
+    if (import.meta.env.VITE_GA_MEASUREMENT_ID) {
+      ReactGA.send({ 
+        hitType: "pageview", 
+        page: location.pathname + location.search 
+      })
+    }
+  }, [location])
+
   return (
     <div className="min-h-screen flex flex-col bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100">
       <Navbar />
