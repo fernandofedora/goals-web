@@ -1,9 +1,9 @@
-name: Auto Generate Daily Blog Post
+name: Auto Generate Monthly Blog Post
 
 on:
   schedule:
-    # Runs at 10:00 AM UTC every day
-    - cron: '0 10 * * *'
+    # Runs at 10:00 AM UTC on the 1st day of every month
+    - cron: '0 10 1 * *'
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -38,7 +38,7 @@ jobs:
       - name: Commit and Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "📝 blog: Auto-generated daily post via xAI"
+          commit_message: "📝 blog: Auto-generated monthly post via xAI"
           commit_user_name: "Goals System AI Bot"
           commit_user_email: "actions@github.com"
           commit_author: "Goals System AI Bot <actions@github.com>"

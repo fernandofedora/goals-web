@@ -127,7 +127,7 @@ async function run() {
       }
     }
     md += '---\n\n'
-    md += content
+    md += typeof content === 'string' ? content.replace(/\\n/g, '\n') : content
     return md
   }
 
