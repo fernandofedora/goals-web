@@ -97,6 +97,14 @@ async function run() {
   console.log(`Ángulo: ${generatedData.seo_analysis.angle}`)
   console.log('--------------------\n')
 
+  // Fix literal \n characters that the LLM might have output as text instead of true line breaks
+  if (generatedData.es_content) {
+    generatedData.es_content = generatedData.es_content.replace(/\\n/g, '\n')
+  }
+  if (generatedData.en_content) {
+    generatedData.en_content = generatedData.en_content.replace(/\\n/g, '\n')
+  }
+
   const slug = generatedData.slug || `post-${Date.now()}`
   
   // Ensure directories exist
