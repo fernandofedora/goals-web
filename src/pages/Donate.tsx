@@ -20,7 +20,7 @@ export default function Donate() {
 
           {/* PayPal Card */}
           <a
-            href="https://paypal.me/fernoel95"
+            href="https://paypal.me/Ferespina95"
             target="_blank"
             rel="noreferrer"
             className="group relative rounded-3xl p-[2px] bg-gradient-to-br from-[#003087] via-[#009cde] to-[#00457c] hover:shadow-2xl hover:shadow-[#009cde]/25 hover:-translate-y-2 transition-all duration-500 block"
