@@ -38,7 +38,10 @@ export default function BlogPost() {
   const formattedDate = new Date(post.date).toLocaleDateString(lang === 'es' ? 'es-ES' : 'en-US', {
     day: 'numeric',
     month: 'short',
-    year: 'numeric'
+    year: 'numeric',
+    // Frontmatter dates are date-only (UTC midnight); format in UTC so
+    // viewers behind UTC (e.g. UTC-6) don't see the previous day.
+    timeZone: 'UTC'
   })
 
   const schema = {

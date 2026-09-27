@@ -19,11 +19,14 @@ export default function BlogCard({
   const { lang } = useI18n()
 
   // Format date correctly based on language
-  const formattedDate = date 
+  const formattedDate = date
     ? new Date(date).toLocaleDateString(lang === 'es' ? 'es-ES' : 'en-US', {
         day: 'numeric',
         month: 'short',
-        year: 'numeric'
+        year: 'numeric',
+        // Frontmatter dates are date-only (UTC midnight); format in UTC so
+        // viewers behind UTC (e.g. UTC-6) don't see the previous day.
+        timeZone: 'UTC'
       })
     : ''
 
