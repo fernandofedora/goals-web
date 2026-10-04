@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
 import Section from '../components/Section'
 import FeatureCard from '../components/FeatureCard'
 import { useI18n } from '../i18n'
 
 export default function Home() {
-  const { t } = useI18n()
+  const { t, lang } = useI18n()
   return (
     <>
       <Hero />
@@ -88,7 +89,7 @@ export default function Home() {
             })}
             <div className="mt-12 flex flex-col sm:flex-row gap-4 pt-4">
               <a href="https://fernandofedora.github.io/goal-document/user/guia-inicio/" className="btn btn-outline text-lg h-14 px-8">{t('home.start.full_guide')}</a>
-              <a href="/download" className="btn btn-primary text-lg h-14 px-8 shadow-lg shadow-primary/25">{t('home.start.download')}</a>
+              <Link to={`/${lang}/download`} className="btn btn-primary text-lg h-14 px-8 shadow-lg shadow-primary/25">{t('home.start.download')}</Link>
             </div>
           </div>
           <div className="rounded-3xl overflow-hidden aspect-square lg:aspect-auto lg:h-[600px] bg-primary/5 dark:bg-primary/10 border border-primary/10 dark:border-primary/20 relative group">
