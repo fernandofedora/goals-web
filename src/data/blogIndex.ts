@@ -12,6 +12,693 @@ export type BlogPostMeta = {
 export const blogIndex: Record<string, BlogPostMeta[]> = {
   "es": [
     {
+      "slug": "mantener-la-motivacion-para-ahorrar",
+      "title": "Mantener la motivación para ahorrar cuando todo se complica",
+      "excerpt": "Descubrí cómo seguir ahorrando aunque los resultados tarden y la vida te tire obstáculos cada mes.",
+      "date": "2026-06-16",
+      "category": "Mentalidad y Hábitos",
+      "author": "Goals Team",
+      "tags": [
+        "ahorro",
+        "hábitos",
+        "mentalidad"
+      ]
+    },
+    {
+      "slug": "ensenar-finanzas-a-los-hijos",
+      "title": "Enseñar finanzas a los hijos: empieza con lo básico",
+      "excerpt": "Si querés que tus hijos entiendan el valor del dinero sin presionar, acá te cuento cómo empezar de forma natural y sin complicaciones.",
+      "date": "2026-06-15",
+      "category": "Mentalidad y Hábitos",
+      "author": "Goals Team",
+      "tags": [
+        "educación financiera",
+        "familia",
+        "hábitos"
+      ]
+    },
+    {
+      "slug": "categorizar-gastos-para-ganar-control",
+      "title": "Categorizá tus gastos y ganá control real de tu plata",
+      "excerpt": "Aprendé a categorizar gastos de forma simple para entender dónde se va tu dinero y tomar decisiones que sí se ajusten a tu vida real.",
+      "date": "2026-06-14",
+      "category": "Organización Financiera",
+      "author": "Goals Team",
+      "tags": [
+        "organización",
+        "gastos",
+        "presupuesto"
+      ]
+    },
+    {
+      "slug": "paga-tus-metas-antes-que-tus-gastos",
+      "title": "Paga tus metas antes que tus gastos para ahorrar más",
+      "excerpt": "Descubrí cómo ordenar tus pagos para que las metas de ahorro avancen aunque el sueldo parezca justo.",
+      "date": "2026-06-13",
+      "category": "Ahorro",
+      "author": "Goals Team",
+      "tags": [
+        "ahorro",
+        "metas financieras",
+        "presupuesto"
+      ]
+    },
+    {
+      "slug": "metodo-tres-cuentas-organizar-sueldo",
+      "title": "Método de las tres cuentas para organizar tu sueldo",
+      "excerpt": "Separá tu plata en tres cuentas claras y dejá de preguntarte dónde se fue el sueldo cada mes.",
+      "date": "2026-06-12",
+      "category": "Organización Financiera",
+      "author": "Goals Team",
+      "tags": [
+        "organización",
+        "presupuesto",
+        "hábitos"
+      ]
+    },
+    {
+      "slug": "herramientas-para-planificar-gastos",
+      "title": "Herramientas para planificar gastos que se adaptan a tu vida",
+      "excerpt": "Descubrí formas simples de planificar gastos con lo que ya tenés a mano y sin complicarte la vida.",
+      "date": "2026-06-11",
+      "category": "Herramientas y Apps",
+      "author": "Goals Team",
+      "tags": [
+        "herramientas",
+        "presupuesto",
+        "organizacion"
+      ]
+    },
+    {
+      "slug": "pagar-deudas-con-sueldo-minimo",
+      "title": "Pagar deudas con sueldo mínimo: plan realista que sí funciona",
+      "excerpt": "Si tu sueldo apenas alcanza, pagar deudas parece imposible. Acá te cuento cómo armar un plan sencillo que se adapte a tu realidad sin frustrarte.",
+      "date": "2026-06-10",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "deudas",
+        "presupuesto",
+        "ingresos bajos"
+      ]
+    },
+    {
+      "slug": "mantener-habitos-financieros-cuando-la-vida-se-complica",
+      "title": "Mantener hábitos financieros cuando todo se complica",
+      "excerpt": "La vida no avisa cuando se descontrola. Acá te cuento cómo seguir con tus hábitos de ahorro sin sentir que todo se te cae encima.",
+      "date": "2026-06-09",
+      "category": "Mentalidad y Hábitos",
+      "author": "Goals Team",
+      "tags": [
+        "hábitos",
+        "mentalidad",
+        "ahorro"
+      ]
+    },
+    {
+      "slug": "ajustar-presupuesto-cuando-cambia-tu-vida",
+      "title": "Ajustar presupuesto cuando todo cambia: sin dramas",
+      "excerpt": "Tu presupuesto ya no cuadra porque la vida cambió. Acá te cuento cómo ajustarlo de forma realista y sin empezar de cero otra vez.",
+      "date": "2026-06-08",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "presupuesto",
+        "cambios",
+        "organización"
+      ]
+    },
+    {
+      "slug": "revision-mensual-de-finanzas",
+      "title": "Revisión mensual de finanzas: el ritual que te mantiene en control",
+      "excerpt": "Descubrí cómo hacer una revisión mensual de finanzas en 30 minutos para detectar fugas y ajustar tu presupuesto sin estrés.",
+      "date": "2026-06-07",
+      "category": "Organización Financiera",
+      "author": "Goals Team",
+      "tags": [
+        "organización",
+        "presupuesto",
+        "hábitos"
+      ]
+    },
+    {
+      "slug": "manejar-aumento-salarial",
+      "title": "Manejar aumento salarial sin que se te escape todo",
+      "excerpt": "Recibiste un aumento y ya estás pensando en gastarlo. Acá te cuento qué hacer de verdad para que ese dinero extra te sirva y no desaparezca en dos semanas.",
+      "date": "2026-06-06",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "aumento salarial",
+        "presupuesto",
+        "finanzas personales"
+      ]
+    },
+    {
+      "slug": "darte-gustos-sin-descontrolar-tu-presupuesto",
+      "title": "Cómo darte gustos sin descontrolar tu presupuesto",
+      "excerpt": "Aprendé a incluir lo que te gusta sin que tu plata se escape cada mes. Te cuento lo que me ha funcionado de verdad.",
+      "date": "2026-06-05",
+      "category": "Mentalidad y Hábitos",
+      "author": "Goals Team",
+      "tags": [
+        "mentalidad",
+        "presupuesto",
+        "hábitos"
+      ]
+    },
+    {
+      "slug": "que-hacer-con-tu-aguinaldo",
+      "title": "Qué hacer con tu aguinaldo para que rinda de verdad",
+      "excerpt": "El aguinaldo llega y en dos semanas ya no queda nada. Acá te cuento qué podés hacer con ese dinero extra para que realmente te sirva y no se te escape.",
+      "date": "2026-06-04",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "aguinaldo",
+        "dinero extra",
+        "presupuesto"
+      ]
+    },
+    {
+      "slug": "manejar-primer-sueldo-sin-gastarlo-todo",
+      "title": "Cómo manejar tu primer sueldo sin gastarlo todo",
+      "excerpt": "Recibiste tu primer sueldo y ya se fue? Acá te cuento cómo organizarlo de verdad, sin fórmulas complicadas ni culpa.",
+      "date": "2026-06-03",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "primer sueldo",
+        "presupuesto",
+        "ahorro joven"
+      ]
+    },
+    {
+      "slug": "alertas-de-gastos-para-controlar-presupuesto",
+      "title": "Alertas de gastos: configúralas y evita pasarte del presupuesto",
+      "excerpt": "Aprendé a activar alertas bancarias y de apps para recibir avisos antes de gastar de más y mantener el control sin revisar todo el tiempo.",
+      "date": "2026-06-02",
+      "category": "Herramientas y Apps",
+      "author": "Goals Team",
+      "tags": [
+        "herramientas",
+        "presupuesto",
+        "apps"
+      ]
+    },
+    {
+      "slug": "gastos-alineados-con-tus-valores",
+      "title": "Gasta según tus valores y recuperá el control",
+      "excerpt": "Descubrí cómo alinear lo que gastás con lo que realmente importa para que tu dinero deje de irse en cosas que no te llenan.",
+      "date": "2026-06-01",
+      "category": "Mentalidad y Hábitos",
+      "author": "Goals Team",
+      "tags": [
+        "mentalidad",
+        "gastos",
+        "hábitos"
+      ]
+    },
+    {
+      "slug": "decir-no-a-gastos-sociales",
+      "title": "Decir no a gastos sociales sin sentirte culpable",
+      "excerpt": "Aprendé a rechazar salidas que no te convienen sin que te dé ansiedad ni te alejes de tu gente.",
+      "date": "2026-05-31",
+      "category": "Mentalidad y Hábitos",
+      "author": "Goals Team",
+      "tags": [
+        "mentalidad",
+        "gastos",
+        "relaciones"
+      ]
+    },
+    {
+      "slug": "gasto-emocional-como-identificarlo",
+      "title": "Gasto emocional: cómo identificarlo antes de que te deje sin plata",
+      "excerpt": "El gasto emocional no siempre es obvio. Te cuento cómo darte cuenta a tiempo y qué hacer cuando tu estado de ánimo te empuja a comprar.",
+      "date": "2026-05-30",
+      "category": "Mentalidad y Hábitos",
+      "author": "Goals Team",
+      "tags": [
+        "mentalidad",
+        "hábitos",
+        "control de gastos"
+      ]
+    },
+    {
+      "slug": "control-de-suscripciones",
+      "title": "Control de suscripciones: deja de pagar por lo que no usás",
+      "excerpt": "Revisá tus suscripciones olvidadas y recuperá plata cada mes con pasos simples que podés hacer hoy mismo.",
+      "date": "2026-05-29",
+      "category": "Organización Financiera",
+      "author": "Goals Team",
+      "tags": [
+        "suscripciones",
+        "ahorro",
+        "organización"
+      ]
+    },
+    {
+      "slug": "calendario-financiero-personal",
+      "title": "Calendario Financiero Personal: Organiza Tu Año",
+      "excerpt": "Creá un calendario financiero personal que te ayude a no olvidar pagos y avanzar en tus metas de ahorro. Te cuento cómo hacerlo paso a paso con lo que realmente funciona.",
+      "date": "2026-05-28",
+      "category": "Organización Financiera",
+      "author": "Goals Team",
+      "tags": [
+        "organización",
+        "planificación",
+        "ahorro"
+      ]
+    },
+    {
+      "slug": "ahorro-en-el-supermercado-sin-pasar-hambre",
+      "title": "Ahorro en el supermercado: tips que sí funcionan",
+      "excerpt": "Aprendé a bajar la cuenta del súper sin sacrificar lo que comés. Trucos reales para planificar, comprar y ahorrar cada semana.",
+      "date": "2026-05-27",
+      "category": "Ahorro",
+      "author": "Goals Team",
+      "tags": [
+        "ahorro",
+        "presupuesto",
+        "compras"
+      ]
+    },
+    {
+      "slug": "organizar-gastos-fijos-y-variables",
+      "title": "Organizar gastos fijos y variables para ahorrar más",
+      "excerpt": "Aprendé a separar tus gastos fijos y variables de forma simple para tener control real de tu dinero cada mes.",
+      "date": "2026-05-25",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "presupuesto",
+        "control de gastos",
+        "ahorro"
+      ]
+    },
+    {
+      "slug": "revisar-finanzas-semanalmente",
+      "title": "Revisa tus finanzas semanalmente sin perder tiempo",
+      "excerpt": "Descubrí cómo dedicar solo 15 minutos a la semana para revisar tus finanzas y evitar que el dinero se escape sin darte cuenta.",
+      "date": "2026-05-24",
+      "category": "Organización Financiera",
+      "author": "Goals Team",
+      "tags": [
+        "organización",
+        "hábitos",
+        "control semanal"
+      ]
+    },
+    {
+      "slug": "revisar-extractos-bancarios",
+      "title": "Revisar extractos bancarios: el hábito que te ahorra plata",
+      "excerpt": "Aprendé a revisar tus extractos bancarios en 15 minutos al mes y descubrí gastos que se te escapan. Un método simple que realmente funciona.",
+      "date": "2026-05-23",
+      "category": "Organización Financiera",
+      "author": "Goals Team",
+      "tags": [
+        "organización",
+        "gastos",
+        "hábitos"
+      ]
+    },
+    {
+      "slug": "presupuesto-quincenal-que-funciona",
+      "title": "Presupuesto quincenal: cómo organizarlo sin quedarte sin plata a mitad de mes",
+      "excerpt": "Si cobrás cada dos semanas y el dinero se te acaba antes de tiempo, este método te ayuda a distribuirlo de forma realista y sin complicaciones.",
+      "date": "2026-05-22",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "presupuesto",
+        "quincenal",
+        "control de gastos"
+      ]
+    },
+    {
+      "slug": "regla-de-las-24-horas-para-evitar-compras-impulsivas",
+      "title": "Regla de las 24 horas: Evita compras que luego lamentás",
+      "excerpt": "Descubrí cómo usar la regla de las 24 horas para frenar compras impulsivas y tomar decisiones más inteligentes con tu plata sin sentir que te estás privando de todo.",
+      "date": "2026-05-21",
+      "category": "Mentalidad y Hábitos",
+      "author": "Goals Team",
+      "tags": [
+        "mentalidad",
+        "gastos impulsivos",
+        "hábitos diarios"
+      ]
+    },
+    {
+      "slug": "revisar-finanzas-cada-trimestre",
+      "title": "Revisar tus finanzas cada trimestre: cómo hacerlo sin estrés",
+      "excerpt": "Descubre un método simple para revisar tus finanzas cada tres meses y ajustar lo que ya no funciona en tu día a día.",
+      "date": "2026-05-20",
+      "category": "Organización Financiera",
+      "author": "Goals Team",
+      "tags": [
+        "finanzas personales",
+        "organización",
+        "presupuesto"
+      ]
+    },
+    {
+      "slug": "como-ahorrar-cuando-no-te-alcanza-el-sueldo",
+      "title": "Cómo ahorrar cuando no te alcanza el sueldo",
+      "excerpt": "Si sentís que tu sueldo desaparece antes de llegar a fin de mes, acá te cuento qué podés hacer de verdad para empezar a guardar aunque sea poquito.",
+      "date": "2026-05-19",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "ahorro",
+        "presupuesto",
+        "finanzas personales"
+      ]
+    },
+    {
+      "slug": "ingresos-variables-como-organizar-tu-dinero",
+      "title": "Ingresos variables: cómo organizar tu dinero mes a mes",
+      "excerpt": "Si tus pagos llegan en montos distintos cada mes, este método te ayuda a mantener control sin estrés ni cálculos eternos.",
+      "date": "2026-05-18",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "ingresos variables",
+        "presupuesto",
+        "organizacion financiera"
+      ]
+    },
+    {
+      "slug": "gastos-hormiga-como-reducirlos",
+      "title": "Gastos hormiga: cómo reducirlos sin sentirte privado",
+      "excerpt": "Descubrí cómo identificar los gastos pequeños que se comen tu sueldo y qué podés hacer hoy mismo para frenarlos sin dramas.",
+      "date": "2026-05-17",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "gastos",
+        "presupuesto",
+        "ahorro"
+      ]
+    },
+    {
+      "slug": "gastos-imprevistos-sin-endeudarte",
+      "title": "Gastos imprevistos: cómo manejarlos sin endeudarte",
+      "excerpt": "Aprendé a enfrentar esos gastos que aparecen de repente sin que tu presupuesto se venga abajo ni termines usando la tarjeta de crédito.",
+      "date": "2026-05-16",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "gastos",
+        "imprevistos",
+        "presupuesto"
+      ]
+    },
+    {
+      "slug": "ahorro-para-comprar-casa",
+      "title": "Ahorro para Comprar Casa: Pasos que Funcionan de Verdad",
+      "excerpt": "Si soñás con tu casa propia pero el ahorro parece imposible, acá te muestro cómo empezar sin sacrificios locos. Descubrí trucos simples para acumular ese dinero y hacer tu meta real, paso a paso.",
+      "date": "2026-05-13",
+      "category": "Ahorro",
+      "author": "Goals Team",
+      "tags": [
+        "ahorro",
+        "casa propia",
+        "metas financieras"
+      ]
+    },
+    {
+      "slug": "ahorro-para-retiro-sin-estres",
+      "title": "Ahorro para el Retiro: Empieza Hoy sin Complicaciones",
+      "excerpt": "Descubre cómo armar un plan de ahorro para retiro que se adapte a tu vida diaria, sin sacrificios extremos ni fórmulas complicadas. Con tips prácticos que podés aplicar desde ya para asegurar un futuro más tranquilo.",
+      "date": "2026-05-12",
+      "category": "Ahorro",
+      "author": "Goals Team",
+      "tags": [
+        "ahorro para retiro",
+        "plan de ahorro",
+        "finanzas personales"
+      ]
+    },
+    {
+      "slug": "comparadores-financieros-ofertas",
+      "title": "Comparadores Financieros: Encuentra Ofertas sin Perder Tiempo",
+      "excerpt": "Descubre cómo usar comparadores financieros para ahorrar en préstamos, seguros y más. Te cuento trucos que me han servido para no caer en trampas y tomar decisiones rápidas.",
+      "date": "2026-05-11",
+      "category": "Herramientas y Apps",
+      "author": "Goals Team",
+      "tags": [
+        "comparadores financieros",
+        "apps financieras",
+        "ahorro inteligente"
+      ]
+    },
+    {
+      "slug": "apps-ahorro-automatico",
+      "title": "Apps para Ahorrar Automáticamente: Configúralas y Olvídate",
+      "excerpt": "Descubre apps para ahorrar automáticamente que hacen el trabajo por vos, sin esfuerzo diario. Aprende a configurarlas para metas reales como un viaje o emergencia, con tips que se adaptan a tu vida cotidiana y evitan el olvido de suscripciones.",
+      "date": "2026-05-10",
+      "category": "Herramientas y Apps",
+      "author": "Goals Team",
+      "tags": [
+        "ahorro automático",
+        "apps financieras",
+        "herramientas digitales"
+      ]
+    },
+    {
+      "slug": "relacion-emocional-con-el-dinero",
+      "title": "Relación Emocional con el Dinero: Cómo Cambiarla",
+      "excerpt": "Si el dinero te genera estrés o culpa, no estás solo. Descubre cómo transformar esa relación emocional para tomar decisiones más libres y efectivas en tu vida diaria.",
+      "date": "2026-05-09",
+      "category": "Mentalidad y Hábitos",
+      "author": "Goals Team",
+      "tags": [
+        "mentalidad financiera",
+        "emociones y dinero",
+        "hábitos emocionales"
+      ]
+    },
+    {
+      "slug": "flujo-de-caja-personal",
+      "title": "Flujo de Caja Personal: Controla Tu Dinero Día a Día",
+      "excerpt": "Descubre cómo manejar tu flujo de caja personal para evitar sorpresas al final del mes. Con tips prácticos y ejemplos cotidianos, aprende a organizar tus ingresos y gastos de forma simple, como si un amigo te lo explicara.",
+      "date": "2026-05-08",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "flujo de caja",
+        "finanzas diarias",
+        "control de gastos"
+      ]
+    },
+    {
+      "slug": "ordenar-cuentas-bancarias",
+      "title": "Ordena Tus Cuentas Bancarias: Gana Claridad Rápido",
+      "excerpt": "¿Tus cuentas bancarias son un lío que te estresa cada mes? Aprende a ordenarlas de forma simple, con trucos que yo mismo uso para no perder el control. Ideal para vos que querés más paz en tus finanzas.",
+      "date": "2026-05-06",
+      "category": "Organización Financiera",
+      "author": "Goals Team",
+      "tags": [
+        "organización financiera",
+        "cuentas bancarias",
+        "finanzas personales"
+      ]
+    },
+    {
+      "slug": "reto-52-semanas-ahorro",
+      "title": "Reto 52 Semanas: Ahorra Miles sin Esfuerzo",
+      "excerpt": "Descubre cómo el reto 52 semanas te ayuda a ahorrar sin complicaciones. Empieza con poco y termina con un fondo sólido — ideal para vos que querés control en tus finanzas sin sacrificar lo que te gusta.",
+      "date": "2026-05-05",
+      "category": "Ahorro",
+      "author": "Goals Team",
+      "tags": [
+        "reto 52 semanas",
+        "ahorro fácil",
+        "métodos de ahorro"
+      ]
+    },
+    {
+      "slug": "ahorro-familiar",
+      "title": "Ahorro Familiar: Involucra a Todos sin Peleas",
+      "excerpt": "Descubre cómo hacer del ahorro familiar un hábito divertido y efectivo. Con tips para involucrar a los niños y pareja, sin dramas ni sacrificios innecesarios. Empieza hoy y ve cómo crece tu fondo común.",
+      "date": "2026-05-04",
+      "category": "Ahorro",
+      "author": "Goals Team",
+      "tags": [
+        "ahorro familiar",
+        "hábitos financieros",
+        "finanzas en familia"
+      ]
+    },
+    {
+      "slug": "metas-financieras-como-definirlas",
+      "title": "Metas Financieras: Cómo Definirlas y Cumplirlas de Verdad",
+      "excerpt": "¿Te has propuesto metas financieras que se quedan en el aire? Descubre cómo definirlas de forma realista, con trucos que me han ayudado a mí y que vos podés aplicar hoy para no perder la motivación y ver resultados concretos en tu bolsillo.",
+      "date": "2026-05-03",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "metas financieras",
+        "finanzas personales"
+      ]
+    },
+    {
+      "slug": "planificacion-anual-dinero",
+      "title": "Planificación Anual de Tu Dinero: Empieza Fuerte",
+      "excerpt": "¿Te ha pasado que el año se te va volando y terminas con las mismas deudas? Descubre cómo armar una planificación anual financiera que se adapte a tu vida real, con pasos simples para ahorrar y organizar sin estrés. Aprende trucos que yo mismo uso para no desviarme del camino.",
+      "date": "2026-05-02",
+      "category": "Organización Financiera",
+      "author": "Goals Team",
+      "tags": [
+        "planificación financiera",
+        "organizar dinero",
+        "metas anuales"
+      ]
+    },
+    {
+      "slug": "salir-de-deudas-pasos-practicos",
+      "title": "Salir de Deudas: Pasos que Realmente Funcionan para Vos",
+      "excerpt": "Si las deudas te agobian, acá te cuento cómo salir de ellas paso a paso, con trucos que yo mismo he probado. Nada de fórmulas mágicas, solo acciones reales para tomar control de tu dinero.",
+      "date": "2026-05-01",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "salir de deudas",
+        "control de deudas",
+        "finanzas personales"
+      ]
+    },
+    {
+      "slug": "habitos-financieros-saludables",
+      "title": "Hábitos Financieros Saludables: Cómo Construirlos sin Frustrarte",
+      "excerpt": "Aprende a crear hábitos financieros saludables que se queden contigo, con trucos simples y honestos que he probado. Olvídate de planes perfectos y enfócate en lo que realmente funciona para vos.",
+      "date": "2026-04-30",
+      "category": "Mentalidad y Hábitos",
+      "author": "Goals Team",
+      "tags": [
+        "hábitos financieros",
+        "mentalidad financiera",
+        "ahorro diario"
+      ]
+    },
+    {
+      "slug": "sistema-de-sobres-digitales",
+      "title": "Sistema de Sobres Digitales: Organiza Tu Dinero Fácil",
+      "excerpt": "Descubre cómo usar el sistema de sobres digitales para controlar tus gastos sin complicaciones. Ideal para vos que querés ordenar tu plata sin tanto rollo.",
+      "date": "2026-04-30",
+      "category": "Organización Financiera",
+      "author": "Goals Team",
+      "tags": [
+        "organización financiera",
+        "presupuesto",
+        "ahorro"
+      ]
+    },
+    {
+      "slug": "ahorro-para-viaje",
+      "title": "Ahorro para un Viaje: Hazlo Real sin Sacrificios",
+      "excerpt": "Querés ahorrar para ese viaje soñado pero no sabés por dónde empezar? Acá te cuento cómo lo hice yo, con trucos simples que se adaptan a tu vida real, sin dejar de disfrutar el día a día. Descubrí metas claras y ahorro automático para llegar sin estrés.",
+      "date": "2026-04-29",
+      "category": "Ahorro",
+      "author": "Goals Team",
+      "tags": [
+        "ahorro para metas",
+        "viajes y finanzas",
+        "hábitos financieros"
+      ]
+    },
+    {
+      "slug": "fondo-de-emergencia-como-construirlo",
+      "title": "Fondo de Emergencia: Cómo Construirlo sin Estrés",
+      "excerpt": "Aprende a armar un fondo de emergencia que realmente te proteja de imprevistos, con pasos simples que se adaptan a tu bolsillo. Olvídate de reglas estrictas y empieza hoy con lo que tenés.",
+      "date": "2026-04-29",
+      "category": "Finanzas Personales",
+      "author": "Goals Team",
+      "tags": [
+        "fondo de emergencia",
+        "ahorro",
+        "finanzas personales"
+      ]
+    },
+    {
+      "slug": "presupuesto-en-google-sheets",
+      "title": "Presupuesto en Google Sheets: Crea el Tuyo sin Complicaciones",
+      "excerpt": "¿Cansado de apps complicadas? Aprende a armar un presupuesto en Google Sheets que se adapte a tu vida real, con pasos simples y ejemplos de gastos diarios. Empieza a controlar tu dinero hoy mismo.",
+      "date": "2026-04-29",
+      "category": "Herramientas y Apps",
+      "author": "Goals Team",
+      "tags": [
+        "presupuesto",
+        "Google Sheets",
+        "finanzas personales"
+      ]
+    },
+    {
+      "slug": "hablar-de-dinero-en-pareja",
+      "title": "Hablar de Dinero en Pareja: Evita Peleas y Construye Juntos",
+      "excerpt": "¿Te ha pasado que una charla sobre gastos termina en discusión? Descubre cómo hablar de dinero en pareja de forma honesta, con tips prácticos que he probado y que ayudan a alinear metas sin dramas. Construye hábitos financieros sólidos juntos y fortalece tu relación.",
+      "date": "2026-04-27",
+      "category": "Mentalidad y Hábitos",
+      "author": "Goals Team",
+      "tags": [
+        "finanzas en pareja",
+        "hábitos financieros",
+        "mentalidad financiera"
+      ]
+    },
+    {
+      "slug": "apps-para-seguimiento-de-gastos",
+      "title": "Apps para seguimiento de gastos: las que realmente uso",
+      "excerpt": "¿Gastas sin darte cuenta y al final del mes no sabes dónde se fue el dinero? Descubre apps sencillas que te ayudan a rastrear cada euro, con trucos para que no las abandones después de una semana. Empieza a controlar tu flujo de caja hoy.",
+      "date": "2026-04-26",
+      "category": "Herramientas y Apps",
+      "author": "Goals Team",
+      "tags": [
+        "apps financieras",
+        "seguimiento de gastos",
+        "herramientas de presupuesto"
+      ]
+    },
+    {
+      "slug": "mentalidad-de-escasez-como-superarla",
+      "title": "Mentalidad de Escasez: Cómo Dejarla Atrás en Tus Finanzas",
+      "excerpt": "Si sientes que el dinero nunca alcanza, esta mentalidad de escasez podría estar frenándote. Descubre cómo cambiarla con hábitos simples que he probado yo mismo, para que empieces a ver oportunidades en lugar de límites.",
+      "date": "2026-04-26",
+      "category": "Mentalidad y Hábitos",
+      "author": "Goals Team",
+      "tags": [
+        "mentalidad de escasez",
+        "hábitos financieros"
+      ]
+    },
+    {
+      "slug": "metodo-50-30-20-ahorro-sin-complicaciones",
+      "title": "Método 50/30/20: Ahorra sin complicaciones",
+      "excerpt": "Descubre cómo el método 50/30/20 te ayuda a ahorrar sin sacrificar lo que te gusta. Un enfoque simple para controlar tus gastos y construir un fondo de emergencia real, adaptado a tu vida cotidiana.",
+      "date": "2026-04-26",
+      "category": "Ahorro",
+      "author": "Goals Team",
+      "tags": [
+        "ahorro",
+        "presupuesto",
+        "finanzas personales"
+      ]
+    },
+    {
+      "slug": "organiza-tus-documentos-financieros",
+      "title": "Organiza Tus Documentos Financieros: Guía Práctica",
+      "excerpt": "Descubre cómo organizar documentos financieros sin estrés, desde facturas olvidadas hasta contratos importantes. Aprende trucos simples que te ahorran tiempo y evitan multas, adaptados a tu vida real.",
+      "date": "2026-04-26",
+      "category": "Organización Financiera",
+      "author": "Goals Team",
+      "tags": [
+        "organización financiera",
+        "documentos financieros",
+        "finanzas personales"
+      ]
+    },
+    {
       "slug": "buenas-practicas-categorias",
       "title": "Buenas prácticas para categorías",
       "excerpt": "Organiza tus categorías con colores y nombres consistentes.",
@@ -59,6 +746,693 @@ export const blogIndex: Record<string, BlogPostMeta[]> = {
     }
   ],
   "en": [
+    {
+      "slug": "mantener-la-motivacion-para-ahorrar",
+      "title": "Keeping Motivation to Save When Everything Gets Complicated",
+      "excerpt": "Learn how to keep saving even when results are slow and life throws obstacles every month.",
+      "date": "2026-06-16",
+      "category": "Mindset and Habits",
+      "author": "Goals Team",
+      "tags": [
+        "saving",
+        "habits",
+        "mindset"
+      ]
+    },
+    {
+      "slug": "ensenar-finanzas-a-los-hijos",
+      "title": "Teaching Kids About Money: Start with the Basics",
+      "excerpt": "If you want your kids to understand the value of money without pressure, here's how to start naturally and without complications.",
+      "date": "2026-06-15",
+      "category": "Mindset and Habits",
+      "author": "Goals Team",
+      "tags": [
+        "financial education",
+        "family",
+        "habits"
+      ]
+    },
+    {
+      "slug": "categorizar-gastos-para-ganar-control",
+      "title": "Categorize Your Expenses and Gain Real Control Over Your Money",
+      "excerpt": "Learn how to categorize expenses simply to understand where your money goes and make decisions that truly fit your real life.",
+      "date": "2026-06-14",
+      "category": "Financial Organization",
+      "author": "Goals Team",
+      "tags": [
+        "organization",
+        "expenses",
+        "budget"
+      ]
+    },
+    {
+      "slug": "paga-tus-metas-antes-que-tus-gastos",
+      "title": "Pay Your Goals Before Your Expenses to Save More",
+      "excerpt": "Learn how to reorder your payments so your savings goals move forward even when your salary feels tight.",
+      "date": "2026-06-13",
+      "category": "Saving",
+      "author": "Goals Team",
+      "tags": [
+        "saving",
+        "financial goals",
+        "budget"
+      ]
+    },
+    {
+      "slug": "metodo-tres-cuentas-organizar-sueldo",
+      "title": "The Three Accounts Method to Organize Your Salary",
+      "excerpt": "Split your money into three clear accounts and stop wondering where your salary went each month.",
+      "date": "2026-06-12",
+      "category": "Financial Organization",
+      "author": "Goals Team",
+      "tags": [
+        "organization",
+        "budget",
+        "habits"
+      ]
+    },
+    {
+      "slug": "herramientas-para-planificar-gastos",
+      "title": "Tools to plan expenses that fit your life",
+      "excerpt": "Discover simple ways to plan expenses with what you already have without complicating your life.",
+      "date": "2026-06-11",
+      "category": "Tools and Apps",
+      "author": "Goals Team",
+      "tags": [
+        "tools",
+        "budget",
+        "organization"
+      ]
+    },
+    {
+      "slug": "pagar-deudas-con-sueldo-minimo",
+      "title": "Paying Debt on a Minimum Wage: A Realistic Plan That Works",
+      "excerpt": "If your salary barely covers basics, paying off debt feels impossible. Here's how to build a simple plan that fits your reality without frustration.",
+      "date": "2026-06-10",
+      "category": "Personal Finance",
+      "author": "Goals Team",
+      "tags": [
+        "debt",
+        "budget",
+        "low income"
+      ]
+    },
+    {
+      "slug": "mantener-habitos-financieros-cuando-la-vida-se-complica",
+      "title": "Keeping Financial Habits When Life Gets Complicated",
+      "excerpt": "Life doesn't warn you when it falls apart. Here's how to stick with your saving habits without feeling like everything is crashing down.",
+      "date": "2026-06-09",
+      "category": "Mindset and Habits",
+      "author": "Goals Team",
+      "tags": [
+        "habits",
+        "mindset",
+        "saving"
+      ]
+    },
+    {
+      "slug": "ajustar-presupuesto-cuando-cambia-tu-vida",
+      "title": "Adjusting Your Budget When Life Changes: No Drama",
+      "excerpt": "Your budget no longer adds up because life changed. Here's how to adjust it realistically without starting from scratch.",
+      "date": "2026-06-08",
+      "category": "Personal Finance",
+      "author": "Goals Team",
+      "tags": [
+        "budget",
+        "changes",
+        "organization"
+      ]
+    },
+    {
+      "slug": "revision-mensual-de-finanzas",
+      "title": "Monthly Finance Review: The Ritual That Keeps You in Control",
+      "excerpt": "Learn how to do a monthly finance review in 30 minutes to spot leaks and adjust your budget without stress.",
+      "date": "2026-06-07",
+      "category": "Financial Organization",
+      "author": "Goals Team",
+      "tags": [
+        "organization",
+        "budget",
+        "habits"
+      ]
+    },
+    {
+      "slug": "manejar-aumento-salarial",
+      "title": "How to Handle a Salary Increase Without Spending It All",
+      "excerpt": "You got a raise and you're already thinking about spending it. Here's what to actually do so that extra money works for you instead of disappearing in two weeks.",
+      "date": "2026-06-06",
+      "category": "Personal Finances",
+      "author": "Goals Team",
+      "tags": [
+        "salary increase",
+        "budgeting",
+        "personal finance"
+      ]
+    },
+    {
+      "slug": "darte-gustos-sin-descontrolar-tu-presupuesto",
+      "title": "How to Treat Yourself Without Wrecking Your Budget",
+      "excerpt": "Learn to include what you enjoy without your money slipping away every month. I'll share what has really worked for me.",
+      "date": "2026-06-05",
+      "category": "Mindset and Habits",
+      "author": "Goals Team",
+      "tags": [
+        "mindset",
+        "budget",
+        "habits"
+      ]
+    },
+    {
+      "slug": "que-hacer-con-tu-aguinaldo",
+      "title": "What to Do with Your Year-End Bonus So It Actually Lasts",
+      "excerpt": "Your bonus arrives and two weeks later it's gone. Here's what you can actually do with that extra money so it helps you instead of disappearing.",
+      "date": "2026-06-04",
+      "category": "Personal Finance",
+      "author": "Goals Team",
+      "tags": [
+        "bonus",
+        "extra money",
+        "budget"
+      ]
+    },
+    {
+      "slug": "manejar-primer-sueldo-sin-gastarlo-todo",
+      "title": "How to Manage Your First Paycheck Without Spending It All",
+      "excerpt": "Got your first paycheck and it disappeared already? Here's how to actually organize it, without complicated formulas or guilt.",
+      "date": "2026-06-03",
+      "category": "Personal Finances",
+      "author": "Goals Team",
+      "tags": [
+        "first paycheck",
+        "budget",
+        "young saving"
+      ]
+    },
+    {
+      "slug": "alertas-de-gastos-para-controlar-presupuesto",
+      "title": "Expense Alerts: Set Them Up to Stay Within Budget",
+      "excerpt": "Learn how to activate bank and app alerts to get notified before overspending and keep control without constant checking.",
+      "date": "2026-06-02",
+      "category": "Tools and Apps",
+      "author": "Goals Team",
+      "tags": [
+        "tools",
+        "budget",
+        "apps"
+      ]
+    },
+    {
+      "slug": "gastos-alineados-con-tus-valores",
+      "title": "Spend According to Your Values and Take Back Control",
+      "excerpt": "Learn how to align your spending with what truly matters so your money stops disappearing on things that don't fulfill you.",
+      "date": "2026-06-01",
+      "category": "Mindset and Habits",
+      "author": "Goals Team",
+      "tags": [
+        "mindset",
+        "spending",
+        "habits"
+      ]
+    },
+    {
+      "slug": "decir-no-a-gastos-sociales",
+      "title": "How to Say No to Social Spending Without Feeling Guilty",
+      "excerpt": "Learn to turn down outings that don't fit your budget without anxiety or losing your people.",
+      "date": "2026-05-31",
+      "category": "Mindset and Habits",
+      "author": "Goals Team",
+      "tags": [
+        "mindset",
+        "spending",
+        "relationships"
+      ]
+    },
+    {
+      "slug": "gasto-emocional-como-identificarlo",
+      "title": "Emotional Spending: How to Spot It Before It Empties Your Wallet",
+      "excerpt": "Emotional spending isn't always obvious. Here's how to catch it in time and what to do when your mood pushes you to buy.",
+      "date": "2026-05-30",
+      "category": "Mindset and Habits",
+      "author": "Goals Team",
+      "tags": [
+        "mindset",
+        "habits",
+        "spending control"
+      ]
+    },
+    {
+      "slug": "control-de-suscripciones",
+      "title": "Subscription Control: Stop Paying for What You Don't Use",
+      "excerpt": "Review your forgotten subscriptions and recover money each month with simple steps you can take today.",
+      "date": "2026-05-29",
+      "category": "Financial Organization",
+      "author": "Goals Team",
+      "tags": [
+        "subscriptions",
+        "savings",
+        "organization"
+      ]
+    },
+    {
+      "slug": "calendario-financiero-personal",
+      "title": "Personal Financial Calendar: Organize Your Year",
+      "excerpt": "Create a personal financial calendar that helps you avoid missing payments and move forward with your savings goals. I'll show you how to do it step by step with what actually works.",
+      "date": "2026-05-28",
+      "category": "Financial Organization",
+      "author": "Goals Team",
+      "tags": [
+        "organization",
+        "planning",
+        "saving"
+      ]
+    },
+    {
+      "slug": "ahorro-en-el-supermercado-sin-pasar-hambre",
+      "title": "Grocery Savings: Tips That Actually Work",
+      "excerpt": "Learn how to lower your supermarket bill without sacrificing what you eat. Real tricks to plan, shop and save every week.",
+      "date": "2026-05-27",
+      "category": "Saving",
+      "author": "Goals Team",
+      "tags": [
+        "saving",
+        "budget",
+        "shopping"
+      ]
+    },
+    {
+      "slug": "organizar-gastos-fijos-y-variables",
+      "title": "Organize Fixed and Variable Expenses to Save More",
+      "excerpt": "Learn how to separate your fixed and variable expenses simply to gain real control over your money each month.",
+      "date": "2026-05-25",
+      "category": "Personal Finance",
+      "author": "Goals Team",
+      "tags": [
+        "budget",
+        "expense tracking",
+        "saving"
+      ]
+    },
+    {
+      "slug": "revisar-finanzas-semanalmente",
+      "title": "Review Your Finances Weekly Without Wasting Time",
+      "excerpt": "Learn how to spend just 15 minutes a week reviewing your finances to stop money from slipping away unnoticed.",
+      "date": "2026-05-24",
+      "category": "Financial Organization",
+      "author": "Goals Team",
+      "tags": [
+        "organization",
+        "habits",
+        "weekly control"
+      ]
+    },
+    {
+      "slug": "revisar-extractos-bancarios",
+      "title": "Reviewing Bank Statements: The Habit That Saves You Money",
+      "excerpt": "Learn to review your bank statements in 15 minutes a month and find expenses that slip away. A simple method that actually works.",
+      "date": "2026-05-23",
+      "category": "Financial Organization",
+      "author": "Goals Team",
+      "tags": [
+        "organization",
+        "expenses",
+        "habits"
+      ]
+    },
+    {
+      "slug": "presupuesto-quincenal-que-funciona",
+      "title": "Biweekly Budget: How to Organize It Without Running Out of Money Mid-Month",
+      "excerpt": "If you get paid every two weeks and money always runs out too soon, this realistic method helps you split it without stress.",
+      "date": "2026-05-22",
+      "category": "Personal Finance",
+      "author": "Goals Team",
+      "tags": [
+        "budget",
+        "biweekly",
+        "expense tracking"
+      ]
+    },
+    {
+      "slug": "regla-de-las-24-horas-para-evitar-compras-impulsivas",
+      "title": "The 24-Hour Rule: Avoid Purchases You'll Regret Later",
+      "excerpt": "Learn how to apply the 24-hour rule to stop impulsive buying and make smarter money decisions without feeling deprived.",
+      "date": "2026-05-21",
+      "category": "Mindset and Habits",
+      "author": "Goals Team",
+      "tags": [
+        "mindset",
+        "impulse spending",
+        "daily habits"
+      ]
+    },
+    {
+      "slug": "revisar-finanzas-cada-trimestre",
+      "title": "Reviewing Your Finances Every Quarter: How to Do It Without Stress",
+      "excerpt": "Discover a simple method to review your finances every three months and adjust what no longer works in your daily life.",
+      "date": "2026-05-20",
+      "category": "Financial Organization",
+      "author": "Goals Team",
+      "tags": [
+        "personal finance",
+        "organization",
+        "budget"
+      ]
+    },
+    {
+      "slug": "como-ahorrar-cuando-no-te-alcanza-el-sueldo",
+      "title": "How to Save When Your Salary Isn't Enough",
+      "excerpt": "If you feel your paycheck disappears before the end of the month, here's what you can actually do to start saving even a little bit.",
+      "date": "2026-05-19",
+      "category": "Personal Finance",
+      "author": "Goals Team",
+      "tags": [
+        "saving",
+        "budget",
+        "personal finance"
+      ]
+    },
+    {
+      "slug": "ingresos-variables-como-organizar-tu-dinero",
+      "title": "Variable Income: How to Organize Your Money Month by Month",
+      "excerpt": "If your payments arrive in different amounts each month, this method helps you stay in control without stress or endless calculations.",
+      "date": "2026-05-18",
+      "category": "Personal Finance",
+      "author": "Goals Team",
+      "tags": [
+        "variable income",
+        "budget",
+        "financial organization"
+      ]
+    },
+    {
+      "slug": "gastos-hormiga-como-reducirlos",
+      "title": "Ant Expenses: How to Reduce Them Without Feeling Deprived",
+      "excerpt": "Learn how to spot the small daily leaks that eat your paycheck and what you can do right now to stop them without stress.",
+      "date": "2026-05-17",
+      "category": "Personal Finance",
+      "author": "Goals Team",
+      "tags": [
+        "expenses",
+        "budget",
+        "saving"
+      ]
+    },
+    {
+      "slug": "gastos-imprevistos-sin-endeudarte",
+      "title": "Unexpected Expenses: How to Handle Them Without Going Into Debt",
+      "excerpt": "Learn how to face sudden expenses without your budget collapsing or ending up using your credit card.",
+      "date": "2026-05-16",
+      "category": "Personal Finances",
+      "author": "Goals Team",
+      "tags": [
+        "expenses",
+        "unexpected",
+        "budget"
+      ]
+    },
+    {
+      "slug": "ahorro-para-comprar-casa",
+      "title": "Saving for a House: Steps That Really Work",
+      "excerpt": "If you dream of owning your own home but saving seems impossible, here I show you how to start without crazy sacrifices. Discover simple tricks to accumulate that money and make your goal real, step by step.",
+      "date": "2026-05-13",
+      "category": "Savings",
+      "author": "Goals Team",
+      "tags": [
+        "savings",
+        "own home",
+        "financial goals"
+      ]
+    },
+    {
+      "slug": "ahorro-para-retiro-sin-estres",
+      "title": "Saving for Retirement: Start Today Without Complications",
+      "excerpt": "Discover how to build a retirement savings plan that fits your daily life, without extreme sacrifices or complicated formulas. With practical tips you can apply right now to ensure a more peaceful future.",
+      "date": "2026-05-12",
+      "category": "Savings",
+      "author": "Goals Team",
+      "tags": [
+        "saving for retirement",
+        "savings plan",
+        "personal finance"
+      ]
+    },
+    {
+      "slug": "comparadores-financieros-ofertas",
+      "title": "Financial Comparators: Find Deals Without Wasting Time",
+      "excerpt": "Discover how to use financial comparators to save on loans, insurance, and more. I share tricks that have worked for me to avoid pitfalls and make quick decisions.",
+      "date": "2026-05-11",
+      "category": "Tools and Apps",
+      "author": "Goals Team",
+      "tags": [
+        "financial comparators",
+        "financial apps",
+        "smart saving"
+      ]
+    },
+    {
+      "slug": "apps-ahorro-automatico",
+      "title": "Apps for Automatic Saving: Set Them Up and Forget",
+      "excerpt": "Discover apps for automatic saving that do the work for you, without daily effort. Learn to set them up for real goals like a trip or emergency, with tips that fit your everyday life and avoid forgetting subscriptions.",
+      "date": "2026-05-10",
+      "category": "Tools and Apps",
+      "author": "Goals Team",
+      "tags": [
+        "automatic saving",
+        "financial apps",
+        "digital tools"
+      ]
+    },
+    {
+      "slug": "relacion-emocional-con-el-dinero",
+      "title": "Emotional Relationship with Money: How to Change It",
+      "excerpt": "If money causes you stress or guilt, you're not alone. Discover how to transform that emotional relationship to make freer and more effective decisions in your daily life.",
+      "date": "2026-05-09",
+      "category": "Mindset and Habits",
+      "author": "Goals Team",
+      "tags": [
+        "financial mindset",
+        "emotions and money",
+        "emotional habits"
+      ]
+    },
+    {
+      "slug": "flujo-de-caja-personal",
+      "title": "Personal Cash Flow: Control Your Money Day by Day",
+      "excerpt": "Discover how to manage your personal cash flow to avoid surprises at the end of the month. With practical tips and everyday examples, learn to organize your income and expenses simply, as if a friend were explaining it to you.",
+      "date": "2026-05-08",
+      "category": "Personal Finances",
+      "author": "Goals Team",
+      "tags": [
+        "cash flow",
+        "daily finances",
+        "expense control"
+      ]
+    },
+    {
+      "slug": "ordenar-cuentas-bancarias",
+      "title": "Organize Your Bank Accounts: Gain Clarity Quickly",
+      "excerpt": "Are your bank accounts a mess that stresses you out every month? Learn to organize them simply, with tricks I use myself to stay in control. Perfect for you who want more peace in your finances.",
+      "date": "2026-05-06",
+      "category": "Financial Organization",
+      "author": "Goals Team",
+      "tags": [
+        "financial organization",
+        "bank accounts",
+        "personal finance"
+      ]
+    },
+    {
+      "slug": "reto-52-semanas-ahorro",
+      "title": "52-Week Challenge: Save Thousands Effortlessly",
+      "excerpt": "Discover how the 52-week challenge helps you save without complications. Start small and end with a solid fund — perfect for you who want control over your finances without sacrificing what you like.",
+      "date": "2026-05-05",
+      "category": "Savings",
+      "author": "Goals Team",
+      "tags": [
+        "52-week challenge",
+        "easy savings",
+        "saving methods"
+      ]
+    },
+    {
+      "slug": "ahorro-familiar",
+      "title": "Family Savings: Involve Everyone Without Fights",
+      "excerpt": "Discover how to make family savings a fun and effective habit. With tips to involve kids and your partner, without drama or unnecessary sacrifices. Start today and watch your common fund grow.",
+      "date": "2026-05-04",
+      "category": "Savings",
+      "author": "Goals Team",
+      "tags": [
+        "family savings",
+        "financial habits",
+        "family finances"
+      ]
+    },
+    {
+      "slug": "metas-financieras-como-definirlas",
+      "title": "Financial Goals: How to Define and Achieve Them for Real",
+      "excerpt": "Have you set financial goals that just fizzle out? Discover how to define them realistically, with tricks that have helped me and that you can apply today to stay motivated and see concrete results in your pocket.",
+      "date": "2026-05-03",
+      "category": "Personal Finance",
+      "author": "Goals Team",
+      "tags": [
+        "financial goals",
+        "personal finance"
+      ]
+    },
+    {
+      "slug": "planificacion-anual-dinero",
+      "title": "Annual Money Planning: Start Strong",
+      "excerpt": "Has the year flown by and you're left with the same debts? Discover how to create an annual financial plan that fits your real life, with simple steps to save and organize without stress. Learn tricks I use myself to stay on track.",
+      "date": "2026-05-02",
+      "category": "Financial Organization",
+      "author": "Goals Team",
+      "tags": [
+        "financial planning",
+        "organize money",
+        "annual goals"
+      ]
+    },
+    {
+      "slug": "salir-de-deudas-pasos-practicos",
+      "title": "Get Out of Debt: Practical Steps That Really Work for You",
+      "excerpt": "If debts are overwhelming you, here I tell you how to get out of them step by step, with tricks I've tried myself. No magic formulas, just real actions to take control of your money.",
+      "date": "2026-05-01",
+      "category": "Personal Finance",
+      "author": "Goals Team",
+      "tags": [
+        "get out of debt",
+        "debt control",
+        "personal finance"
+      ]
+    },
+    {
+      "slug": "habitos-financieros-saludables",
+      "title": "Healthy Financial Habits: How to Build Them Without Getting Frustrated",
+      "excerpt": "Learn to create healthy financial habits that stick, with simple and honest tricks I've tried. Forget perfect plans and focus on what really works for you.",
+      "date": "2026-04-30",
+      "category": "Mindset and Habits",
+      "author": "Goals Team",
+      "tags": [
+        "financial habits",
+        "financial mindset",
+        "daily savings"
+      ]
+    },
+    {
+      "slug": "sistema-de-sobres-digitales",
+      "title": "Digital Envelope System: Organize Your Money Easily",
+      "excerpt": "Discover how to use the digital envelope system to control your expenses without complications. Ideal for you who want to organize your money without so much hassle.",
+      "date": "2026-04-30",
+      "category": "Financial Organization",
+      "author": "Goals Team",
+      "tags": [
+        "financial organization",
+        "budget",
+        "savings"
+      ]
+    },
+    {
+      "slug": "ahorro-para-viaje",
+      "title": "Saving for a Trip: Make It Real Without Sacrifices",
+      "excerpt": "Want to save for that dream trip but don't know where to start? Here I tell you how I did it, with simple tricks that fit your real life, without giving up enjoying the day to day. Discover clear goals and automatic saving to get there without stress.",
+      "date": "2026-04-29",
+      "category": "Saving",
+      "author": "Goals Team",
+      "tags": [
+        "saving for goals",
+        "travel and finances",
+        "financial habits"
+      ]
+    },
+    {
+      "slug": "fondo-de-emergencia-como-construirlo",
+      "title": "Emergency Fund: How to Build It Without Stress",
+      "excerpt": "Learn to build an emergency fund that truly protects you from unexpected events, with simple steps that fit your budget. Forget strict rules and start today with what you have.",
+      "date": "2026-04-29",
+      "category": "Personal Finances",
+      "author": "Goals Team",
+      "tags": [
+        "emergency fund",
+        "savings",
+        "personal finances"
+      ]
+    },
+    {
+      "slug": "presupuesto-en-google-sheets",
+      "title": "Budget in Google Sheets: Create Yours Without Complications",
+      "excerpt": "Tired of complicated apps? Learn to build a budget in Google Sheets that fits your real life, with simple steps and examples of daily expenses. Start controlling your money today.",
+      "date": "2026-04-29",
+      "category": "Tools and Apps",
+      "author": "Goals Team",
+      "tags": [
+        "budget",
+        "Google Sheets",
+        "personal finance"
+      ]
+    },
+    {
+      "slug": "hablar-de-dinero-en-pareja",
+      "title": "Talking About Money as a Couple: Avoid Fights and Build Together",
+      "excerpt": "Has a chat about expenses ever turned into an argument? Discover how to talk about money as a couple honestly, with practical tips I've tried that help align goals without drama. Build solid financial habits together and strengthen your relationship.",
+      "date": "2026-04-27",
+      "category": "Mindset and Habits",
+      "author": "Goals Team",
+      "tags": [
+        "couple finances",
+        "financial habits",
+        "financial mindset"
+      ]
+    },
+    {
+      "slug": "apps-para-seguimiento-de-gastos",
+      "title": "Apps for Tracking Expenses: The Ones I Actually Use",
+      "excerpt": "Do you spend without noticing and at the end of the month don't know where the money went? Discover simple apps that help you track every dollar, with tips to not abandon them after a week. Start controlling your cash flow today.",
+      "date": "2026-04-26",
+      "category": "Tools and Apps",
+      "author": "Goals Team",
+      "tags": [
+        "financial apps",
+        "expense tracking",
+        "budgeting tools"
+      ]
+    },
+    {
+      "slug": "mentalidad-de-escasez-como-superarla",
+      "title": "Scarcity Mindset: How to Overcome It in Your Finances",
+      "excerpt": "If you feel like money never stretches far enough, this scarcity mindset might be holding you back. Learn how to shift it with simple habits I've tried myself, so you start seeing opportunities instead of limits.",
+      "date": "2026-04-26",
+      "category": "Mindset and Habits",
+      "author": "Goals Team",
+      "tags": [
+        "scarcity mindset",
+        "financial habits"
+      ]
+    },
+    {
+      "slug": "metodo-50-30-20-ahorro-sin-complicaciones",
+      "title": "50/30/20 Method: Save Without Complications",
+      "excerpt": "Discover how the 50/30/20 method helps you save without sacrificing what you enjoy. A simple approach to control your expenses and build a real emergency fund, tailored to your everyday life.",
+      "date": "2026-04-26",
+      "category": "Savings",
+      "author": "Goals Team",
+      "tags": [
+        "savings",
+        "budget",
+        "personal finance"
+      ]
+    },
+    {
+      "slug": "organiza-tus-documentos-financieros",
+      "title": "Organize Your Financial Documents: Practical Guide",
+      "excerpt": "Discover how to organize financial documents without stress, from forgotten bills to important contracts. Learn simple tricks that save time and avoid fines, tailored to your real life.",
+      "date": "2026-04-26",
+      "category": "Financial Organization",
+      "author": "Goals Team",
+      "tags": [
+        "financial organization",
+        "financial documents",
+        "personal finance"
+      ]
+    },
     {
       "slug": "category-best-practices",
       "title": "Category best practices",
